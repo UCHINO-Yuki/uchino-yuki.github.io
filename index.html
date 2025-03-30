@@ -9,10 +9,11 @@
     <link rel="website icon" type="PNG" href="fig/cat-favicon.png">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/lang-button.css">
     <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/timeline.css">
-    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/link-button.css">
     <link rel="stylesheet" href="css/go-to-top.css">
 </head>
 
@@ -22,25 +23,39 @@
         Logo 
       ------------->
     <div class="logo-left">
-        <a id="riken-link" href="https://www.r-ccs.riken.jp/" target="_blank" rel="noopener noreferrer" class="tooltip">
-            <img src="fig/RIKEN-R-CCS_symbol.png">
+        <a id="riken-link" href="https://www.r-ccs.riken.jp/" target="_blank" rel="noopener noreferrer" class="tooltip"
+            alt="" title="RIKEN R-CCS">
+            <img src="fig/RIKEN-R-CCS_symbol.png" alt="">
             <span class="tooltip-text">Go to R-CCS</span>
         </a>
     </div>
     <div class="logo-right">
         <a href="https://www.r-ccs.riken.jp/labs/lpnctrt/index.html" target="_blank" rel="noopener noreferrer"
-            class="tooltip">
-            <img src="fig/cat.png">
+            class="tooltip" alt="" title="My team">
+            <img src="fig/cat.png" alt="">
             <span class="tooltip-text-right">Go to my team</span>
         </a>
     </div>
+
+
+    <!-------------
+        Language button
+      ------------->
+    <div class="lang-button">
+        <label class="rocker rocker-small">
+            <input type="checkbox" id="switch">
+            <span class="switch-left">Ja</span>
+            <span class="switch-right">En</span>
+        </label>
+    </div>
+
 
     <!-------------
         Title 
       ------------->
     <div class="title">
         <div class="title-left">
-            <img src="fig/Piskel_yuki_PC.gif">
+            <img src="fig/Piskel_yuki_PC.gif" alt="">
         </div>
         <div class="title-right ja">
             内野 佑基<br>
@@ -283,17 +298,17 @@
         <div class="cards">
             <button class="card blue"
                 onclick="window.open('https://docs.google.com/spreadsheets/d/1NzPNr34LVmRoncXrWoWY1bK5uMo0ZkNKIA0afZaycQk/edit?usp=sharing','_blank')"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer" alt="">
                 <p class="tip">Achievements<br>List</p>
             </button>
             <button class="card black" onclick="window.open('https://github.com/UCHINO-Yuki','_blank')"
-                rel="noopener noreferrer">
-                <p class="tip">GitHub</p>
+                rel="noopener noreferrer" alt="">
+                <p class="tip"><img src="/fig/github-mark-white.svg" alt="github_logo" />GitHub</p>
             </button>
-            <button class="card green" id="open-researchmap">
+            <button class="card green" id="open-researchmap" alt="">
                 <p class="tip">researchmap</p>
             </button>
-            <button class="card red" id="open-scholar">
+            <button class="card red" id="open-scholar" alt="">
                 <p class="tip">Google Scholar</p>
             </button>
         </div>
