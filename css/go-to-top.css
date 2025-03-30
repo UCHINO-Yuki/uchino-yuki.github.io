@@ -1,0 +1,36 @@
+.to-pagetop {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 16px;
+    background-color: #333;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 400ms ease;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 400ms;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+    border-radius: 50%;
+}
+
+.to-pagetop:hover {
+    transform: rotate(450deg) scale(1.2, 1.2);
+}
+
+.to-pagetop.is-shown {
+    opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+    .to-pagetop.is-shown {
+        display: none;
+    }
+}

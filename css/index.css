@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Icing";
+    src: url("../font/Icing-soda/Icing soda2_bold.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "karakaze";
+    src: url("../font/karakaze_font/karakaze-R.ttf") format("truetype");
+    font-display: swap;
+}
+
+body {
+    font-family: Lato;
+    font-size: min(max(4svw, 30px), 60px);
+    font-weight: 800;
+    color: #C30410;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+
+.section {
+    font-family: "karakaze", "Icing", Lato;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.ja {
+    display: none;
+}
+
+.en {
+    display: none;
+}
+
+.copyright {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 100%;
+    font-size: 16px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "karakaze", Lato;
+    color: black;
+}
+
+@media screen and (max-width: 959px) {
+    .section {
+        margin-top: 14px;
+    }
+}

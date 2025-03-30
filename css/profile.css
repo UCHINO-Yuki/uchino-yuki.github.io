@@ -1,0 +1,37 @@
+.profile {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: "Icing" monospace;
+    line-height: 1.2;
+}
+
+.profile table {
+    border-spacing: 1ex;
+    table-layout: auto;
+    word-break: break-all;
+    word-wrap: break-all;
+}
+
+.profile table tr td {
+    text-align: left;
+}
+
+.profile table tr td:first-child {
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 959px) {
+    .profile {
+        font-size: 14px;
+    }
+}
