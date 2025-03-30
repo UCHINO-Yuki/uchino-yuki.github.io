@@ -55,6 +55,12 @@
     font-weight: 700;
 }
 
+.cards .card p.tip img {
+	width: auto;
+	height: 18px;
+	margin-right: 5px;
+}
+
 .cards .card p.second-text {
     font-size: .7em;
 }
