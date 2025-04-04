@@ -35,7 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
     url_scholar = lang === "ja"
       ? "https://scholar.google.co.jp/citations?hl=ja&user=gne9K9wAAAAJ"
       : "https://scholar.google.co.jp/citations?hl=en&user=gne9K9wAAAAJ";
-    
+
+    // change figure
+    const imageElement = document.getElementById("title-image");
+    if (imageElement) {
+        imageElement.src = lang === "ja" 
+            ? "fig/Piskel_yuki_PC.gif" 
+            : "fig/IMG_1075.GIF";
+    }
   }
 
   const currentLang = navigator.language.startsWith('ja') ? 'ja' : 'en';
