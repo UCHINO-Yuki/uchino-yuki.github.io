@@ -29,8 +29,21 @@
     opacity: 1;
 }
 
+#scroll-image {
+    position: fixed;
+    width: 50px;
+    right: 0;
+    z-index: 1000;
+    transition: none;
+    display: none;
+}
+
 @media screen and (max-width: 480px) {
     .to-pagetop.is-shown {
+        display: none;
+    }
+
+    #scroll-image {
         display: none;
     }
 }

@@ -67,6 +67,11 @@ body {
     font-weight: 300;
 }
 
+.copyright img {
+    height: 50px;
+    z-index: 1000;
+}
+
 @media screen and (max-width: 959px) {
     .section {
         margin-top: 14px;
