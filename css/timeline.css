@@ -49,6 +49,7 @@
     float: left;
     color: white;
     border-radius: 10px 0 0 10px;
+    font-family: "tsumugi", Lato, sans-serif;
 }
 
 /* year triangle */
@@ -85,10 +86,13 @@
     top: 12px;
 }
 
+/* year (left) */
 .container dd h3 {
     line-height: 1;
     margin-bottom: 5px;
     padding-top: 5px;
+    font-family: "tsumugi", Lato, sans-serif;
+    color: #665F52;
 }
 
 .container dd p {

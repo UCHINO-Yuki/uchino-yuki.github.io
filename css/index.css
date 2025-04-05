@@ -11,8 +11,8 @@
 }
 
 @font-face {
-    font-family: "karakaze";
-    src: url("../font/karakaze_font/karakaze-R.ttf") format("truetype");
+    font-family: "tsumugi";
+    src: url("../font/tsumugi_font/tsumugi.otf") format("opentype");
     font-display: swap;
 }
 
@@ -37,6 +37,8 @@ body {
 .section {
     width: 100%;
     margin-top: 20px;
+    font-family: "tsumugi", Lato, sans-serif;
+    color: #665F52;
 }
 
 .ja {
@@ -57,14 +59,11 @@ body {
     justify-content: center;
     align-items: center;
     color: #333;
-}
-
-.copyright span {
-    font-family: Lato, sans-serif;
+    font-family: "tsumugi", Lato, sans-serif;
 }
 
 .en-font {
-    font-family: Lato, sans-serif;
+    font-family: "tsumugi", Lato, sans-serif;
     font-weight: 300;
 }
 
