@@ -9,20 +9,35 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-family: "Icing" monospace;
-    line-height: 1.2;
+    color: #333;
+    line-height: 1.4;
 }
 
 .profile table {
-    border-spacing: 1ex;
     table-layout: auto;
     word-break: break-all;
     word-wrap: break-all;
+    border-collapse: collapse;
+}
+
+.profile table,
+.profile table td,
+.profile table th {
+    border-bottom: 1.5px solid #CCBDA3;
 }
 
 .profile table tr td {
     text-align: left;
+    padding-top: 14px;
+}
+
+.profile table tr:hover {
+    background-color: #FCE9C9;
+}
+
+.midtab {
+    width: 40px;
+    min-width: 10px;
 }
 
 .profile table tr td:first-child {

@@ -29,25 +29,12 @@
     height: 100px;
     width: 150px;
     border-radius: 10px;
-    color: white;
+    border-color: #CCBDA3;
+    border-width: 4px;
+    color: #333;
+    background-color: #FDF4E2;
     cursor: pointer;
     transition: 400ms;
-}
-
-.cards .blue {
-    background-color: #00439B;
-}
-
-.cards .black {
-    background-color: #000000;
-}
-
-.cards .green {
-    background-color: #00ba47;
-}
-
-.cards .red {
-    background-color: #C30410;
 }
 
 .cards .card p.tip {
@@ -67,6 +54,7 @@
 
 .cards .card:hover {
     transform: scale(1.2, 1.2);
+    background-color: #FCE9C9;
 }
 
 .cards:hover>.card:not(:hover) {

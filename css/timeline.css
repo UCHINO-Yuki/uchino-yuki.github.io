@@ -14,13 +14,13 @@
 .container {
     width: 100%;
     position: relative;
-    color: black;
 }
 
+/* vertical line */
 .container:after {
     content: "";
     width: 2px;
-    border-left: 2px solid #C30410;
+    border-left: 2px solid #CCBDA3;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -32,16 +32,17 @@
     border-radius: 10px;
 }
 
+/* box color */
 .container dl:hover {
-    background-color: #fff6a7;
+    background-color: #FCE9C9;
 }
 
+/* year box */
 .container dt span {
-    font-family: "karakaze", "Icing", Lato;
     width: 15%;
     height: 40px;
     font-size: 28px;
-    background: #C30410;
+    background: #CCBDA3;
     line-height: 40px;
     text-align: center;
     position: relative;
@@ -50,13 +51,14 @@
     border-radius: 10px 0 0 10px;
 }
 
+/* year triangle */
 .container dt span:after {
     display: block;
     content: "";
     width: 0;
     height: 0;
     border: 20px solid transparent;
-    border-left-color: #C30410;
+    border-left-color: #CCBDA3;
     position: absolute;
     top: 0;
     left: 100%;
@@ -70,20 +72,20 @@
     padding-bottom: 32px;
 }
 
+/* dot */
 .container dd:before {
     display: block;
     content: "";
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #C30410;
+    background: #CCBDA3;
     position: absolute;
     left: -7px;
     top: 12px;
 }
 
 .container dd h3 {
-    font-family: "karakaze", "Icing", Lato;
     line-height: 1;
     margin-bottom: 5px;
     padding-top: 5px;

@@ -17,10 +17,10 @@
 }
 
 body {
-    font-family: Lato;
+    font-family: "Icing", Lato, sans-serif;
     font-size: min(max(4svw, 30px), 60px);
     font-weight: 800;
-    color: #C30410;
+    color: #333;
     min-height: 100%;
     width: 100%;
     display: flex;
@@ -31,10 +31,10 @@ body {
     justify-content: center;
     align-items: center;
     position: sticky;
+    background-color: #FDF4E2;
 }
 
 .section {
-    font-family: "karakaze", "Icing", Lato;
     width: 100%;
     margin-top: 20px;
 }
@@ -56,8 +56,16 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-family: "karakaze", Lato;
-    color: black;
+    color: #333;
+}
+
+.copyright span {
+    font-family: Lato, sans-serif;
+}
+
+.en-font {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
 }
 
 @media screen and (max-width: 959px) {
