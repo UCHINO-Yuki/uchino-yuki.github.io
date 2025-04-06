@@ -37,7 +37,6 @@
 
 .midtab {
     width: 40px;
-    min-width: 10px;
 }
 
 .profile table tr td:first-child {
@@ -48,5 +47,9 @@
 @media screen and (max-width: 959px) {
     .profile {
         font-size: 16px;
+    }
+
+    .midtab {
+        width: 12px;
     }
 }

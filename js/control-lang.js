@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (imageElement) {
         imageElement.src = lang === "ja" 
             ? "fig/Piskel_yuki_PC.gif" 
-            : "fig/IMG_1075.GIF";
+            : "fig/New-Piskel_yuki_centerPart.gif";
     }
   }
 

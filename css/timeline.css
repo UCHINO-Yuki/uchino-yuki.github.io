@@ -32,7 +32,7 @@
     border-radius: 10px;
 }
 
-/* box color */
+/* text box color */
 .container dl:hover {
     background-color: #FCE9C9;
 }
@@ -42,7 +42,7 @@
     width: 15%;
     height: 40px;
     font-size: 28px;
-    background: #CCBDA3;
+    background: #665F52;
     line-height: 40px;
     text-align: center;
     position: relative;
@@ -59,7 +59,7 @@
     width: 0;
     height: 0;
     border: 20px solid transparent;
-    border-left-color: #CCBDA3;
+    border-left-color: #665F52;
     position: absolute;
     top: 0;
     left: 100%;
@@ -80,10 +80,11 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #CCBDA3;
+    background: #665F52;
     position: absolute;
     left: -7px;
     top: 12px;
+    z-index: 9999;
 }
 
 /* year (left) */

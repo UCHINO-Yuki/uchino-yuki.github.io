@@ -76,7 +76,7 @@
 .switch-right {
     right: 0.5em;
     bottom: 0;
-    background-color: #f72424;
+    background-color: #665F52;
     color: #fff;
 }
 
@@ -102,7 +102,7 @@
 }
 
 .rocker input:checked+.switch-left {
-    background-color: #009df8;
+    background-color: #665F52;
     color: #fff;
     bottom: 0px;
     left: 0.5em;
