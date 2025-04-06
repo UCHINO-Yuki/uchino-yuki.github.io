@@ -17,7 +17,7 @@ const scrollEvents = () => {
 }
 
 pagetopBtn.addEventListener('click', () => {
-  cat.style.display = "flex";
+  cat.style.display = "block";
   toScrollTop();
 });
 

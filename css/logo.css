@@ -7,6 +7,10 @@
     align-items: flex-start;
 }
 
+.logo-left a {
+    margin-right: 10px;
+}
+
 .logo-right {
     position: absolute;
     right: 10px;

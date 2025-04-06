@@ -49,27 +49,9 @@ body {
     display: none;
 }
 
-.copyright {
-    margin-top: 60px;
-    margin-bottom: 30px;
-    width: 100%;
-    font-size: 16px;
-    align-content: center;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: #333;
-    font-family: "tsumugi", Lato, sans-serif;
-}
-
 .en-font {
     font-family: "tsumugi", Lato, sans-serif;
     font-weight: 300;
-}
-
-.copyright img {
-    height: 50px;
-    z-index: 1000;
 }
 
 @media screen and (max-width: 959px) {
