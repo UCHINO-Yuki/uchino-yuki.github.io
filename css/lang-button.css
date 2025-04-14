@@ -13,6 +13,36 @@
     font-size: 18px;
 }
 
+/* .flag {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: none;
+    z-index: 999;
+}
+
+.flag img {
+    overflow: hidden;
+    position: fixed;
+    right: -105%;
+    height: 100%;
+    animation: moveflag 6s linear;
+} */
+
+@keyframes moveflag {
+    0% {
+        right: -105%;
+    }
+
+    100% {
+        right: 105%;
+    }
+}
+
 .rocker {
     display: inline-block;
     position: relative;

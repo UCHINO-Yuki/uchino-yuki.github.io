@@ -50,6 +50,18 @@ document.addEventListener("DOMContentLoaded", function () {
   
   document.getElementById("switch").addEventListener("change", function () {
     const newLang = this.checked ? "ja" : "en";
+    // const flagbox = document.getElementById("flagbox");
+    // const flagimg = document.getElementById("flagimg");
+    // flagimg.src = newLang === "ja" 
+    //   ? "fig/ja.gif" 
+    //   : "fig/en.gif";
+    // flagbox.style.display = "block";
+    // setTimeout(function () {
+    //   setLanguage(newLang);
+    // }, 3000);
+    // setTimeout(function () {
+    //   flagbox.style.display = "none";
+    // }, 6000);
     setLanguage(newLang);
   });
   
