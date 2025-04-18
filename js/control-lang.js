@@ -1,5 +1,6 @@
 let url_researchmap = "https://researchmap.jp/yukiuchino?lang=ja";
 let url_scholar = "https://scholar.google.co.jp/citations?hl=ja&user=gne9K9wAAAAJ";
+let url_riken = "https://www.r-ccs.riken.jp/";
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -21,11 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("switch").checked = (lang === "ja");
     
     // change link
+    url_riken = lang === "ja"
+      ? "https://www.r-ccs.riken.jp/"
+      : "https://www.r-ccs.riken.jp/en/";
+    
     const rikenLink = document.getElementById("riken-link");
     if (rikenLink) {
-        rikenLink.href = lang === "ja" 
-            ? "https://www.r-ccs.riken.jp/" 
-            : "https://www.r-ccs.riken.jp/en/";
+        rikenLink.href = url_riken;
     }
 
     url_researchmap = lang === "ja"
@@ -71,5 +74,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("open-scholar").addEventListener("click", function () {
     window.open(url_scholar, "_blank", "noopener,noreferrer");
+  });
+  
+  document.getElementById("riken-button").addEventListener("click", function () {
+    window.open(url_riken, "_blank", "noopener,noreferrer");
   });
 });
