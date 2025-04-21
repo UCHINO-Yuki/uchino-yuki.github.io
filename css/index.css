@@ -39,6 +39,10 @@ body {
     margin-top: 20px;
     font-family: "tsumugi", Lato, sans-serif;
     color: #665F52;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .ja {
