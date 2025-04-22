@@ -1,0 +1,77 @@
+.repository {
+    width: 95%;
+    max-width: 800px;
+    display: flex;
+    gap: 20px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Lato, sans-serif;
+    flex-wrap: wrap;
+}
+
+.repository2 {
+    width: 250px;
+    height: 300px;
+    background-color: #0E1117;
+    border-radius: 0;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s;
+}
+
+.repository2:hover {
+    box-shadow: 0px 0px 30px 1px #665F52;
+    border-width: 5px;
+    border-color: #FCE9C9;
+
+    .repolink {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+.repository2 .title {
+    justify-content: center;
+    font-size: 24px;
+    color: #5C98FF;
+    height: 30%;
+    width: 90%;
+    margin-bottom: 3%;
+}
+
+.repository2 .text {
+    font-size: 18px;
+    color: #F2F6FC;
+    font-weight: 400;
+    height: 67%;
+    width: 80%;
+    text-align: left;
+}
+
+.repository2 .textlink {
+    color: #5C98FF;
+}
+
+.repository2 .repolink {
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    right: 10px;
+    width: 35px;
+    transition: all .4s;
+}
+
+.repository2 img {
+    width: 100%;
+    cursor: pointer;
+}
