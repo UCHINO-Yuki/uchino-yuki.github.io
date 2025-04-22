@@ -10,7 +10,6 @@
     border-radius: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
-    font-family: Lato, sans-serif;
     flex-wrap: wrap;
 }
 
@@ -43,6 +42,7 @@
 .repository2 .title {
     justify-content: center;
     font-size: 24px;
+    font-family: Lato, sans-serif;
     color: #5C98FF;
     height: 30%;
     width: 90%;
@@ -51,6 +51,7 @@
 
 .repository2 .text {
     font-size: 18px;
+    font-family: Lato, sans-serif;
     color: #F2F6FC;
     font-weight: 400;
     height: 67%;
