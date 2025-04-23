@@ -15,11 +15,9 @@
 
 .repository2 {
     width: 250px;
-    height: 300px;
+    height: 330px;
     background-color: #0E1117;
-    border-radius: 0;
     border-radius: 20px;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -27,12 +25,13 @@
     justify-content: center;
     align-items: center;
     transition: all .4s;
+    position: relative;
 }
 
 .repository2:hover {
-    box-shadow: 0px 0px 30px 1px #665F52;
+    box-shadow: 0px 0px 30px 1px #E6D5B8;
     border-width: 5px;
-    border-color: #FCE9C9;
+    border-color: #E6D5B8;
 
     .repolink {
         transform: scale(1.2, 1.2);
@@ -41,26 +40,34 @@
 
 .repository2 .title {
     justify-content: center;
+    align-items: center;
     font-size: 24px;
-    font-family: Lato, sans-serif;
-    color: #5C98FF;
-    height: 30%;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #E6D5B8;
+    height: 25%;
     width: 90%;
-    margin-bottom: 3%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.repository2 .vspace {
+    width: 100%;
+    height: 10px;
 }
 
 .repository2 .text {
     font-size: 18px;
-    font-family: Lato, sans-serif;
+    font-family: sans-serif;
     color: #F2F6FC;
     font-weight: 400;
-    height: 67%;
+    height: 70%;
     width: 80%;
     text-align: left;
 }
 
 .repository2 .textlink {
-    color: #5C98FF;
+    color: #E6D5B8;
 }
 
 .repository2 .repolink {
