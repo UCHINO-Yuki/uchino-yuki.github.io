@@ -41,7 +41,7 @@
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    font-family: sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 600;
     color: #575044;
     height: 25%;
@@ -57,7 +57,7 @@
 
 .repository2 .text {
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     height: 70%;
     width: 85%;

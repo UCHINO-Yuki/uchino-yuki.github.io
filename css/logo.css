@@ -53,7 +53,7 @@
 }
 
 .tooltip-text {
-    font-family: Lato, sans-serif;
+    font-family: "Lato", sans-serif;
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -83,7 +83,7 @@
 }
 
 .tooltip-text-right {
-    font-family: Lato, sans-serif;
+    font-family: "Lato", sans-serif;
     opacity: 0;
     visibility: hidden;
     position: absolute;

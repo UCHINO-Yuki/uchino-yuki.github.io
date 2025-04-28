@@ -49,7 +49,7 @@
     float: left;
     color: white;
     border-radius: 10px 0 0 10px;
-    font-family: "tsumugi", Lato, sans-serif;
+    font-family: "tsumugi", "Lato", sans-serif;
 }
 
 /* year triangle */
@@ -92,7 +92,7 @@
     line-height: 1;
     margin-bottom: 5px;
     padding-top: 5px;
-    font-family: "tsumugi", Lato, sans-serif;
+    font-family: "tsumugi", "Lato", sans-serif;
     color: #665F52;
 }
 
