@@ -30,6 +30,7 @@
 .container dl {
     overflow: hidden;
     border-radius: 10px;
+    text-align: left;
 }
 
 /* text box color */
@@ -87,11 +88,10 @@
     z-index: 5;
 }
 
-/* year (left) */
+/* year (right) */
 .container dd h3 {
     line-height: 1;
     margin-bottom: 5px;
-    padding-top: 5px;
     font-family: "tsumugi", "Lato", sans-serif;
     color: #665F52;
 }
@@ -99,7 +99,11 @@
 .container dd p {
     line-height: 1.5;
     margin-bottom: 16px;
-    font-size: 20px;
+    font-size: 16px;
+}
+
+.container dd .space {
+    height: 20px;
 }
 
 @media screen and (max-width: 959px) {

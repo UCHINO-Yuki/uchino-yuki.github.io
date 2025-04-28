@@ -42,5 +42,5 @@ window.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', syncImageToScroll);
 
-  syncImageToScroll(); // 初期位置をセット
+  syncImageToScroll();
 });

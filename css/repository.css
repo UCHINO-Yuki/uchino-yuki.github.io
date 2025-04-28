@@ -15,7 +15,7 @@
 
 .repository2 {
     width: 250px;
-    height: 330px;
+    height: 250px;
     background-color: #FCE9C9;
     border-radius: 20px;
     display: flex;
@@ -41,8 +41,7 @@
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     color: #575044;
     height: 25%;
     width: 90%;
@@ -56,8 +55,7 @@
 }
 
 .repository2 .text {
-    font-size: 18px;
-    font-family: "Lato", sans-serif;
+    font-size: 16px;
     font-weight: 400;
     height: 70%;
     width: 85%;

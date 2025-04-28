@@ -53,7 +53,7 @@
 }
 
 .tooltip-text {
-    font-family: "Lato", sans-serif;
+    font-size: 10.5px;
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -63,7 +63,6 @@
     display: inline-block;
     padding: 5px;
     white-space: nowrap;
-    font-size: 10.5px;
     line-height: 1.3;
     background: #333;
     color: #fff;
@@ -83,7 +82,7 @@
 }
 
 .tooltip-text-right {
-    font-family: "Lato", sans-serif;
+    font-size: 10.5px;
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -93,7 +92,6 @@
     display: inline-block;
     padding: 5px;
     white-space: nowrap;
-    font-size: 10.5px;
     line-height: 1.3;
     background: #333;
     color: #fff;
