@@ -17,13 +17,16 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    transform: rotate(90deg);
     border-radius: 50%;
     z-index: 9999;
 }
 
+.to-pagetop::before {
+    content: "\2191";
+}
+
 .to-pagetop:hover {
-    transform: rotate(450deg) scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
 }
 
 .to-pagetop.is-shown {

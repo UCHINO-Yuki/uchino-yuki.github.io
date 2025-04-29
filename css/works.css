@@ -15,7 +15,7 @@
 
 .work .work2 {
     width: 100%;
-    background-color: #FCE9C9;
+    background-color: #fdf4d5;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -59,7 +59,7 @@
 .work2 .title a {
     font-size: 24px;
     font-weight: 700;
-    color: hsl(38, 12%, 30%);
+    color: #333;
 }
 
 .work2 .author {
@@ -108,4 +108,18 @@
 
 .work2 .abst .checkbox:checked+.abst-hide {
     display: block;
+}
+
+.achievement_link {
+    color: #575044;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievement_link img {
+    margin-left: 5px;
+    height: 16px;
+    width: auto;
 }
