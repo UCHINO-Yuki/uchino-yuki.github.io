@@ -8,7 +8,7 @@
 }
 
 .title-left {
-    width: 45%;
+    width: 50%;
     height: 100%;
     padding: 3%;
     text-align: right;
@@ -16,7 +16,7 @@
 }
 
 .title-right {
-    width: 55%;
+    width: 50%;
     height: 100%;
     padding: 3%;
     display: flex;
@@ -25,6 +25,8 @@
 }
 
 .title-left img {
+    width: 250px;
+    height: auto;
     max-width: 100%;
     max-height: 100%;
     padding: 4px;
