@@ -37,10 +37,12 @@
     }
 }
 
-.repository2 .title {
+.repository2 .repotitle {
+    align-content: center;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     height: 25%;
     width: 90%;

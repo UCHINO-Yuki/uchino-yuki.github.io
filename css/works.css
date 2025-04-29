@@ -48,16 +48,19 @@
     font-style: italic;
 }
 
-.work2 .title {
+.work2 .worktitle {
     width: 90%;
     height: fit-content;
     margin-top: 0;
     margin-bottom: 20px;
+    align-content: center;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.work2 .title a {
-    font-size: 24px;
+.work2 .worktitle a {
+    font-size: 20px;
     font-weight: 700;
     color: #333;
 }
