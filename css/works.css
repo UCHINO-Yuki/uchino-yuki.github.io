@@ -109,9 +109,3 @@
 .work2 .abst .checkbox:checked+.abst-hide {
     display: block;
 }
-
-@media screen and (max-width: 959px) {
-    .work2 .abst {
-        display: none;
-    }
-}
