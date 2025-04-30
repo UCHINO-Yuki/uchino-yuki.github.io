@@ -14,10 +14,25 @@
 
 body {
     font-family: "Lato", sans-serif;
-    --font-large: 40px;
-    --font-middle: 24px;
-    --font-small: 20px;
-    --font-tiny: 16px;
+    --font-large: 60px;
+    --font-middle: 28px;
+    --font-small: 24px;
+    --font-tiny: 20px;
+}
+
+@media screen and (max-width: 1500px) {
+    body {
+        --font-large: 40px;
+        --font-middle: 24px;
+        --font-small: 18px;
+        --font-tiny: 14px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .section {
+        margin-top: 14px;
+    }
 }
 
 .section {
@@ -56,20 +71,4 @@ body {
 
 .en {
     display: none;
-}
-
-
-@media screen and (min-width: 1500px) {
-    body {
-        --font-large: 60px;
-        --font-middle: 28px;
-        --font-small: 24px;
-        --font-tiny: 20px;
-    }
-}
-
-@media screen and (max-width: 959px) {
-    .section {
-        margin-top: 14px;
-    }
 }

@@ -2,7 +2,7 @@
     width: 90%;
     display: flex;
     flex-direction: column;
-    font-size: var(--font-middle);
+    font-size: calc(var(--font-small) + 2px);
     margin-top: 50px;
     margin-bottom: 50px;
     align-content: center;
@@ -26,8 +26,8 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 120px;
-    width: 240px;
+    height: 100px;
+    width: 180px;
     border-radius: 10px;
     border-color: #665F52;
     border-width: 4px;
@@ -37,29 +37,45 @@
     transition: 400ms;
 }
 
+@media screen and (min-width: 1501px) {
+    .cards .card {
+        height: 120px;
+        width: 220px;
+    }
+}
+
+.cards .card p {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .cards .card p.tip {
-    font-size: var(--font-middle);
+    font-size: calc(var(--font-small) + 2px);
     font-weight: 600;
 }
 
 .github_logo {
     width: auto;
-    height: 28px;
+    height: calc(var(--font-small) + 6px);
     margin-right: 5px;
 }
 
 .riken_logo {
     width: auto;
-    height: 65px;
+    height: 60px;
 }
 
 .riken_logo2 {
     width: auto;
-    height: 55px;
+    height: 50px;
 }
 
 .cards .card p.second-text {
-    font-size: var(--font-tiny);
+    margin-top: 6px;
+    font-size: var(--font-small);
     font-weight: 600;
 }
 

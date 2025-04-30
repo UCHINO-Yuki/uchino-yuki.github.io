@@ -12,25 +12,12 @@
     font-size: 18px;
 }
 
-/* .flag {
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    display: none;
-    z-index: 999;
+@media screen and (min-width: 1501px) {
+    .lang-button {
+        height: 60px;
+        font-size: 24px;
+    }
 }
-
-.flag img {
-    overflow: hidden;
-    position: fixed;
-    right: -105%;
-    height: 100%;
-    animation: moveflag 6s linear;
-} */
 
 @keyframes moveflag {
     0% {
