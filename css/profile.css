@@ -1,10 +1,9 @@
 .profile {
     width: 90%;
-    max-width: 900px;
     display: flex;
     margin-top: 50px;
     margin-bottom: 50px;
-    font-size: 18px;
+    font-size: var(--font-small);
     align-content: center;
     text-align: center;
     justify-content: center;
@@ -45,10 +44,6 @@
 }
 
 @media screen and (max-width: 959px) {
-    .profile {
-        font-size: 16px;
-    }
-
     .midtab {
         width: 12px;
     }

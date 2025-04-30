@@ -3,16 +3,16 @@
 /*----------*/
 .timeline {
     width: 90%;
-    max-width: 800px;
     display: flex;
     flex-direction: column;
-    font-size: 24px;
+    font-size: var(--font-small);
     margin-top: 50px;
     margin-bottom: 50px;
+    align-items: center;
 }
 
 .container {
-    width: 100%;
+    width: fit-content;
     position: relative;
 }
 
@@ -24,10 +24,11 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 20%;
+    left: 140px;
 }
 
 .container dl {
+    max-width: 1600px;
     overflow: hidden;
     border-radius: 10px;
     text-align: left;
@@ -40,9 +41,9 @@
 
 /* year box */
 .container dt span {
-    width: 15%;
+    width: 100px;
     height: 40px;
-    font-size: 28px;
+    font-size: var(--font-middle);
     background: #665F52;
     line-height: 40px;
     text-align: center;
@@ -67,7 +68,7 @@
 }
 
 .container dd {
-    margin-left: 20%;
+    margin-left: 140px;
     position: relative;
     padding-top: 8px;
     padding-left: 32px;
@@ -97,9 +98,10 @@
 }
 
 .container dd p {
+    margin-left: 20px;
     line-height: 1.5;
     margin-bottom: 16px;
-    font-size: 16px;
+    font-size: var(--font-small);
 }
 
 .container dd .space {
@@ -107,21 +109,12 @@
 }
 
 @media screen and (max-width: 640px) {
-    .timeline {
-        font-size: 20px;
-    }
-
     .container:after {
         border-left: 0px;
     }
 
     .container dt span {
-        font-size: 20px;
         display: none;
-    }
-
-    .container dd p {
-        font-size: 14px;
     }
 
     .container dd {

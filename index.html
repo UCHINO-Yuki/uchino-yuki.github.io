@@ -8,14 +8,20 @@
     <meta name="keywords" content="Yuki Uchino, 内野 佑基, Uchino, 内野">
     <meta name="description" content="Yuki Uchino from RIKEN R-CCS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="website icon" type="PNG" href="fig/cat-favicon.png">
-    <link rel="icon" href="fig/cat-favicon.ico" sizes="32x32">
+
+    <!--- icon --->
+    <link rel="icon" href="fig/cat-favicon.ico">
     <link rel="icon" href="fig/cat-favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" href="fig/cat-favicon.png">
     <link rel="apple-touch-icon" href="fig/cat-favicon.png">
+
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+
+    <!--- CSS --->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/logo.css">
     <link rel="stylesheet" href="css/lang-button.css">
@@ -31,26 +37,21 @@
 
 <body>
 
-    <!-------------
-        Logo 
-      ------------->
+    <!------------->
+    <!--- Logo  --->
+    <!------------->
     <div class="logo-left">
         <a id="riken-link" href="https://www.r-ccs.riken.jp/" target="_blank" rel="noopener noreferrer" class="tooltip"
             alt="" title="RIKEN R-CCS">
             <img src="fig/RIKEN-R-CCS_symbol.png" alt="">
             <span class="tooltip-text">Go to R-CCS</span>
         </a>
-        <a href="https://github.com/UCHINO-Yuki" target="_blank" rel="noopener noreferrer" class="tooltip" alt=""
-            title="GitHub">
-            <img src="fig/github-mark.svg" alt="">
-            <span class="tooltip-text-right">Go to GitHub</span>
-        </a>
     </div>
 
 
-    <!-------------
-        Language button
-      ------------->
+    <!------------------------>
+    <!--- Language button  --->
+    <!------------------------>
     <div class="lang-button">
         <label class="rocker rocker-small">
             <input type="checkbox" id="switch">
@@ -59,9 +60,10 @@
         </label>
     </div>
 
-    <!-------------
-        Title 
-    ------------->
+
+    <!------------->
+    <!--- Title --->
+    <!------------->
     <div class="title">
         <div class="title-left">
             <img src="fig/Piskel_yuki_PC.gif" alt="" id="title-image">
@@ -76,9 +78,10 @@
         </div>
     </div>
 
-    <!-------------
-        Profile
-    ------------->
+
+    <!---------------->
+    <!--- Profile  --->
+    <!---------------->
     <div class="section ja">プロフィール</div>
     <div class="section en">Profile</div>
 
@@ -193,9 +196,9 @@
     </div>
 
 
-    <!-------------
-        Timeline 
-      ------------->
+    <!---------------->
+    <!--- Timeline --->
+    <!---------------->
     <div class="section ja">経歴</div>
     <div class="section en">Curriculum vitae</div>
 
@@ -292,7 +295,8 @@
 
                     <div class="space"></div>
                     <h3>April 2020</h3>
-                    <p>Enrolled in Systems Engineering and Science, Graduate School of Engineering and Science, Shibaura
+                    <p>Enrolled in Systems Engineering and Science, Graduate School of Engineering and Science,
+                        Shibaura
                         Institute of Technology (Master's Program)</p>
                 </dd>
             </dl>
@@ -333,9 +337,9 @@
     </div>
 
 
-    <!-------------
-        works
-      ------------->
+    <!------------->
+    <!--- works --->
+    <!------------->
     <div class="section ja">最近の研究成果</div>
     <div class="section en">Recent Works</div>
 
@@ -524,21 +528,23 @@
     </div>
 
 
-    <!-------------
-        GitHub
-      ------------->
+    <!-------------->
+    <!--- GitHub --->
+    <!-------------->
     <div class="section ja">公開ソフトウェア</div>
     <div class="section en">Public Software</div>
 
     <div class="repository">
         <div class="repository2">
             <div class="repotitle">
-                GEMMul8 (GEMMulate)
+                <a href="https://github.com/RIKEN-RCCS/GEMMul8" target="_blank" rel="noopener noreferrer" alt=""
+                    title="go GitHub">
+                    GEMMul8 (GEMMulate)
+                </a>
             </div>
             <div class="text">
                 GEMM emulation using int8 matrix engines based on the Ozaki scheme II
             </div>
-
             <a href="https://github.com/RIKEN-RCCS/GEMMul8" target=" _blank" rel="noopener noreferrer" class="repolink"
                 alt="" title="GEMMul8">
                 <img src="fig/github-mark.svg" alt="github_logo" />
@@ -547,7 +553,10 @@
 
         <div class="repository2">
             <div class="repotitle">
-                Accelerator for ozIMMU
+                <a href="https://github.com/RIKEN-RCCS/accelerator_for_ozIMMU" target="_blank" rel="noopener noreferrer"
+                    alt="" title="go GitHub">
+                    Accelerator for ozIMMU
+                </a>
             </div>
             <div class="text">
                 Accelerates <a href="https://github.com/enp1s0/ozIMMU" target=" _blank" rel="noopener noreferrer" alt=""
@@ -565,7 +574,10 @@
 
         <div class="repository2">
             <div class="repotitle">
-                DDclass
+                <a href="https://github.com/UCHINO-Yuki/DDclass" target="_blank" rel="noopener noreferrer" alt=""
+                    title="go GitHub">
+                    DDclass
+                </a>
             </div>
             <div class="text">
                 An accurate double-double class toolbox for MATLAB
@@ -575,12 +587,13 @@
                 <img src="fig/github-mark.svg" alt="github_logo" />
             </a>
         </div>
+
     </div>
 
 
-    <!-------------
-        Links 
-      ------------->
+    <!------------->
+    <!--- Links --->
+    <!------------->
     <div class="section">Links</div>
     <div class="links">
         <div class="cards">
@@ -620,23 +633,13 @@
 
             </button>
 
-            <button class="card"
-                onclick="window.open('https://uchino-yuki.notion.site/eb921842cb154d47b562538c00b55b3c?v=061a448db9244dc2a5b828dcc0eaf4a8','_blank')"
-                rel="noopener noreferrer" alt="">
-                <p class="tip en">
-                    Tips<br>
-                    (note to self)</p>
-                <p class="tip ja">
-                    自分用メモ</p>
-            </button>
-
         </div>
     </div>
 
 
-    <!-------------
-        copy right
-      ------------->
+    <!----------------->
+    <!--- copyright --->
+    <!----------------->
     <div class="copyright">
         <div class="running-road">
             <img src="fig/running-cat-horz.gif" class="running">
@@ -645,9 +648,9 @@
     </div>
 
 
-    <!-------------
-        go page top 
-      ------------->
+    <!------------------->
+    <!--- go page top --->
+    <!------------------->
     <img id="scroll-image" src="fig/running-cat.gif" alt="running_cat">
     <button class="to-pagetop"></button>
 </body>
