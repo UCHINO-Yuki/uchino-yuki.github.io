@@ -14,7 +14,7 @@
 
 .work .work2 {
     width: 100%;
-    max-width: 1000px;
+    max-width: 300mm;
     background-color: #fdf4d5;
     border-radius: 20px;
     display: flex;
@@ -27,6 +27,13 @@
     border: solid;
     border-width: 5px;
     border-color: #665F52;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .work .work2 {
+        max-width: 210mm;
+    }
 }
 
 .work2 .date-journal {
