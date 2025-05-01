@@ -29,7 +29,14 @@ body {
     }
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 500px) {
+    body {
+        --font-large: 30px;
+        --font-middle: 20px;
+        --font-small: 16px;
+        --font-tiny: 14px;
+    }
+
     .section {
         margin-top: 14px;
     }
