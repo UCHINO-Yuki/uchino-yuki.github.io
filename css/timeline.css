@@ -6,8 +6,6 @@
     display: flex;
     flex-direction: column;
     font-size: var(--font-small);
-    margin-top: 50px;
-    margin-bottom: 50px;
     align-items: center;
 }
 
@@ -91,6 +89,7 @@
 
 /* year (right) */
 .container dd h3 {
+    font-size: var(--font-middle);
     line-height: 1;
     margin-bottom: 5px;
     font-family: "tsumugi", "Lato", sans-serif;

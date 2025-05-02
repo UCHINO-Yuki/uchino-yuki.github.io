@@ -18,6 +18,8 @@ body {
     --font-middle: 28px;
     --font-small: 24px;
     --font-tiny: 20px;
+    --section-space-top: 100px;
+    --section-space-bottom: 50px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -26,6 +28,8 @@ body {
         --font-middle: 24px;
         --font-small: 18px;
         --font-tiny: 14px;
+        --section-space-top: 70px;
+        --section-space-bottom: 40px;
     }
 }
 
@@ -35,10 +39,8 @@ body {
         --font-middle: 20px;
         --font-small: 16px;
         --font-tiny: 14px;
-    }
-
-    .section {
-        margin-top: 14px;
+        --section-space-top: 50px;
+        --section-space-bottom: 30px;
     }
 }
 
@@ -64,12 +66,10 @@ body {
 .section {
     font-size: var(--font-large);
     width: 100%;
-    margin-top: 20px;
+    margin-top: var(--section-space-top);
+    margin-bottom: var(--section-space-bottom);
     color: #665F52;
-    align-content: center;
-    text-align: center;
     justify-content: center;
-    align-items: center;
 }
 
 .ja {

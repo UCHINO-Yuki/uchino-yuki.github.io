@@ -1,8 +1,6 @@
 .profile {
     width: 90%;
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
     font-size: var(--font-small);
     align-content: center;
     text-align: center;
