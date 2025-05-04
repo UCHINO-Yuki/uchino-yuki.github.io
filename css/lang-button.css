@@ -12,7 +12,13 @@
     font-size: 18px;
 }
 
-@media screen and (min-width: 1501px) {
+@media screen and (min-width: 1200px) {
+    .lang-button {
+        position: fixed;
+    }
+}
+
+@media screen and (min-width: 1921px) {
     .lang-button {
         height: 60px;
         font-size: 24px;

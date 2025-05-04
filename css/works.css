@@ -1,12 +1,13 @@
 .work {
     width: 90%;
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
     align-content: center;
     text-align: center;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     border-radius: 20px;
 }
 
@@ -28,9 +29,9 @@
 }
 
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1920px) {
     .work .work2 {
-        max-width: 210mm;
+        max-width: 200mm;
     }
 }
 

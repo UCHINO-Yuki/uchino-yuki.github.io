@@ -1,5 +1,5 @@
 .links {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     font-size: calc(var(--font-small) + 2px);
@@ -12,7 +12,7 @@
 .cards {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -35,10 +35,10 @@
     transition: 400ms;
 }
 
-@media screen and (min-width: 1501px) {
+@media screen and (min-width: 1921px) {
     .cards .card {
-        height: 120px;
-        width: 220px;
+        height: 140px;
+        width: 250px;
     }
 }
 

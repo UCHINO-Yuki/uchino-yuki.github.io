@@ -29,10 +29,10 @@
     border-color: #665F52;
 }
 
-@media screen and (min-width: 1501px) {
+@media screen and (min-width: 1921px) {
     .repository2 {
-        width: 260px;
-        height: 280px;
+        width: 300px;
+        height: 300px;
     }
 }
 

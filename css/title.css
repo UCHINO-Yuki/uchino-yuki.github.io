@@ -2,9 +2,15 @@
     font-size: var(--font-large);
     font-weight: 800;
     width: 100%;
-    margin-top: 55px;
+    margin-top: 60px;
     display: flex;
     align-items: center;
+}
+
+@media screen and (min-width: 1921px) {
+    .title {
+        margin-top: 90px;
+    }
 }
 
 .title-left {

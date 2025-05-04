@@ -33,7 +33,7 @@
 }
 
 .midtab {
-    width: 40px;
+    width: 30px;
 }
 
 .profile table tr td:first-child {
@@ -41,7 +41,7 @@
     vertical-align: top;
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 640px) {
     .midtab {
         width: 12px;
     }
