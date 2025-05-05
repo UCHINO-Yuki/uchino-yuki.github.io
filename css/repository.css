@@ -10,6 +10,12 @@
     flex-wrap: wrap;
 }
 
+@media screen and (min-width: 1024px) {
+    .repository {
+        width: 100%;
+    }
+}
+
 .repository2 {
     width: 220px;
     max-width: 100%;

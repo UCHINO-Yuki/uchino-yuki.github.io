@@ -9,6 +9,12 @@
     align-items: center;
 }
 
+@media screen and (min-width: 1024px) {
+    .links {
+        width: 100%;
+    }
+}
+
 .cards {
     display: flex;
     flex-direction: row;

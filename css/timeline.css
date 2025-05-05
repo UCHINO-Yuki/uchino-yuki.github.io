@@ -9,6 +9,13 @@
     align-items: center;
 }
 
+
+@media screen and (min-width: 1024px) {
+    .timeline {
+        width: 100%;
+    }
+}
+
 .container {
     width: fit-content;
     position: relative;

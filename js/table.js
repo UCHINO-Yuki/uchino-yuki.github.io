@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section[id^='sec-']");
-  const navItems = document.querySelectorAll(".tableofcontents li");
+  const navItems = document.querySelectorAll("aside li");
 
   function onScroll() {
       let current = "";

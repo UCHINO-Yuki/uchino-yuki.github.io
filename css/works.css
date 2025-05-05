@@ -11,6 +11,12 @@
     border-radius: 20px;
 }
 
+@media screen and (min-width: 1024px) {
+    .work {
+        width: 100%;
+    }
+}
+
 .work .work2 {
     width: 100%;
     max-width: 300mm;

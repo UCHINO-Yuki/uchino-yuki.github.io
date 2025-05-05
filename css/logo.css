@@ -1,14 +1,9 @@
 .logo-left {
-    position: absolute;
-    left: 10px;
-    top: 10px;
+    /* position: relative; */
     height: 40px;
     display: flex;
     align-items: flex-start;
-}
-
-.logo-left a {
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .logo-left img {
@@ -17,12 +12,6 @@
     vertical-align: top;
     display: flex;
     align-self: flex-start;
-}
-
-@media screen and (min-width: 1200px) {
-    .logo-left {
-        position: fixed;
-    }
 }
 
 @media screen and (min-width: 1921px) {
