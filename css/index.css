@@ -95,7 +95,7 @@ section {
     align-items: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     .tableofcontents {
         font-size: var(--font-small);
         display: flex;
