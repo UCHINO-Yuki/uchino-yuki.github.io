@@ -61,18 +61,28 @@
     font-weight: 600;
 }
 
-.github_logo {
+.tip .github_mark {
     width: auto;
-    height: calc(var(--font-small) + 6px);
+    height: calc(var(--font-small) *1.6);
     margin-right: 5px;
 }
 
-.riken_logo {
+.tip .github_logo {
+    width: auto;
+    height: calc(var(--font-small) *1.6);
+}
+
+.tip .linkedin_logo {
+    width: auto;
+    height: calc(var(--font-small) *1.6);
+}
+
+.tip .riken_logo {
     width: auto;
     height: 60px;
 }
 
-.riken_logo2 {
+.tip .riken_logo2 {
     width: auto;
     height: 50px;
 }
@@ -88,6 +98,6 @@
     background-color: #FCE9C9;
 }
 
-.cards:hover>.card:not(:hover) {
+/* .cards:hover>.card:not(:hover) {
     transform: scale(0.9, 0.9);
-}
+} */
