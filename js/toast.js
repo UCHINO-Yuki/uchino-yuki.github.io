@@ -61,8 +61,13 @@ export class Toast {
 
         setTimeout(() => {
             bar.style.animation = `bar ${this.duration / 1000}s linear`;
-            bar.addEventListener("animationend", () => this.removeToast(), { once: true });
+            // bar.addEventListener("animationend", () => this.removeToast(), { once: true });
         }, 10);
+
+        setTimeout(() => {
+            this.removeToast();
+        }, this.duration + 500);
+
     }
 
     removeToast() {
