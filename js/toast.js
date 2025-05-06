@@ -66,7 +66,7 @@ export class Toast {
 
         setTimeout(() => {
             this.removeToast();
-        }, this.duration + 500);
+        }, this.duration + 100);
 
     }
 
