@@ -152,6 +152,7 @@
 }
 
 .achievement_link {
+    width: fit-content;
     color: #575044;
     align-content: center;
     text-align: center;
