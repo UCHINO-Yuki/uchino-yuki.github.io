@@ -33,7 +33,7 @@ body {
         --font-small: 16px;
         --font-tiny: 12px;
         --section-space-top: 50px;
-        --section-space-bottom: 70px;
+        --section-space-bottom: 20px;
     }
 }
 
@@ -101,6 +101,7 @@ section {
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-bottom: var(--section-space-bottom);
 }
 
 @media screen and (min-width: 1024px) {
