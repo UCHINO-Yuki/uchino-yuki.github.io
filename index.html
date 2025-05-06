@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="css/link-button.css">
     <link rel="stylesheet" href="css/go-to-top.css">
     <link rel="stylesheet" href="css/copyrignt.css">
+    <link rel="stylesheet" href="kongari-toast/toast.css" />
 </head>
 
 <body>
@@ -508,6 +509,19 @@
                         K. Ozaki, <u>Y. Uchino</u>, T. Imamura
                     </div>
                     <div class="abst">
+                        <button class="copy-btn">Copy BibTeX</button>
+                        <textarea class="hidebox" readonly>
+                            @misc{ozaki2025ozakischemeiigemmoriented,
+                                title={{Ozaki Scheme II}: A {GEMM}-oriented emulation of floating-point matrix multiplication using an integer modular technique}, 
+                                author={Katsuhisa Ozaki and Yuki Uchino and Toshiyuki Imamura},
+                                year={2025},
+                                eprint={2504.08009},
+                                archivePrefix={arXiv},
+                                primaryClass={cs.MS},
+                                doi={10.48550/arXiv.2504.08009},
+                                url={https://arxiv.org/abs/2504.08009}, 
+                            }
+                        </textarea>
                         <input type="checkbox" class="checkbox">
                         <div class="abst-hide">
                             This paper addresses emulation algorithms for matrix multiplication. General Matrix-Matrix
@@ -558,6 +572,19 @@
                         <u>Y. Uchino</u>, K. Ozaki, T. Terao, T. Imamura
                     </div>
                     <div class="abst">
+                        <button class="copy-btn">Copy BibTeX</button>
+                        <textarea class="hidebox" readonly>
+                            @article{uchino2025fast,
+                                title={Fast Generation of Real-Symmetric Matrices and their Exact Eigenpairs},
+                                author={Yuki Uchino and Katsuhisa Ozaki and Takeshi Terao and Toshiyuki Imamura},
+                                journal={Journal of Advanced Simulation in Science and Engineering},
+                                volume={12},
+                                number={1},
+                                pages={44-60},
+                                year={2025},
+                                doi={10.15748/jasse.12.44}
+                            }
+                        </textarea>
                         <input type="checkbox" class="checkbox">
                         <div class="abst-hide">
                             We propose a method to rapidly generate matrices for real-symmetric eigenproblems. The
@@ -603,6 +630,19 @@
                     </div>
                     <div class="author"><u>Y. Uchino</u>, K. Ozaki, T. Imamura</div>
                     <div class="abst">
+                        <button class="copy-btn">Copy BibTeX</button>
+                        <textarea class="hidebox" readonly>
+                            @article{uchino2025performance,
+                                author = {Yuki Uchino and Katsuhisa Ozaki and Toshiyuki Imamura},
+                                title ={Performance enhancement of the {Ozaki} Scheme on integer matrix multiplication unit},
+                                journal = {The International Journal of High Performance Computing Applications},
+                                volume = {39},
+                                number = {3},
+                                pages = {462-476},
+                                year = {2025},
+                                doi = {10.1177/10943420241313064},
+                            }
+                        </textarea>
                         <input type="checkbox" class="checkbox">
                         <div class="abst-hide">
                             This study was aimed at simultaneously achieving sufficient accuracy and high performance
@@ -652,6 +692,19 @@
                     </div>
                     <div class="author"><u>Y. Uchino</u>, T. Imamura</div>
                     <div class="abst">
+                        <button class="copy-btn">Copy BibTeX</button>
+                        <textarea class="hidebox" readonly>
+                            @INPROCEEDINGS{uchino2024high-performance,
+                                author={Uchino, Yuki and Imamura, Toshiyuki},
+                                booktitle={SC24-W: Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis}, 
+                                title={High-Performance Eigensolver Combining EigenExa and Iterative Refinement}, 
+                                year={2024},
+                                volume={},
+                                number={},
+                                pages={1703-1712},
+                                doi={10.1109/SCW63240.2024.00213}
+                            }
+                        </textarea>
                         <input type="checkbox" class="checkbox">
                         <div class="abst-hide">
                             This study proposes a high-performance and reliable eigensolver via mixed-precision
@@ -868,5 +921,6 @@
 <script src="js/table.js"></script>
 <script src="js/control-lang.js"></script>
 <script src="js/go-to-top.js"></script>
+<script type="module" src="js/cpy-btn.js"></script>
 
 </html>

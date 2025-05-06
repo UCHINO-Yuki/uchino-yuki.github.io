@@ -99,6 +99,25 @@
     justify-content: space-between;
 }
 
+.work2 .abst .copy-btn {
+    display: none;
+    width: fit-content;
+    padding: 10px 10px;
+    height: 30px;
+    border: 2px solid #665F52;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    align-items: center;
+    font-size: var(--font-tiny);
+    background-color: #FCE9C9;
+}
+
+.work2 .abst .hidebox {
+    display: none;
+}
+
 .work2 .abst .checkbox {
     appearance: none;
     width: fit-content;
