@@ -93,19 +93,22 @@
     height: fit-content;
     margin-top: 0;
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
 }
 
 .work2 .abst .checkbox {
     appearance: none;
-    width: 160px;
+    width: fit-content;
+    padding: 5px 10px;
     height: 30px;
     border: 2px solid #665F52;
     border-radius: 5px;
-    display: block;
+    display: flex;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    text-align: center;
-    align-content: center;
+    align-items: center;
     font-size: var(--font-tiny);
 }
 

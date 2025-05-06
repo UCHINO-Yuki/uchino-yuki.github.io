@@ -103,10 +103,10 @@
     color: #665F52;
 }
 
-.container dd p {
-    margin-left: 20px;
+.container dd ul li {
+    margin-left: 24px;
     line-height: 1.5;
-    margin-bottom: 16px;
+    list-style: circle;
     font-size: var(--font-small);
 }
 

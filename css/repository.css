@@ -19,7 +19,6 @@
 .repository2 {
     width: 220px;
     max-width: 100%;
-    height: 240px;
     background-color: #fdf4d5;
     border-radius: 20px;
     display: flex;
@@ -38,13 +37,6 @@
 @media screen and (min-width: 1921px) {
     .repository2 {
         width: 300px;
-        height: 300px;
-    }
-}
-
-.repository2:hover {
-    .repolink {
-        transform: scale(1.2, 1.2);
     }
 }
 
@@ -55,29 +47,44 @@
     align-items: center;
     font-size: var(--font-middle);
     font-weight: 700;
-    height: 25%;
+    height: calc(var(--font-middle) * 3);
     width: 90%;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .repository2 .repotitle a {
-    font-size: var(--font-middle);
-    font-weight: 700;
     color: #333;
-}
-
-.repository2 .vspace {
-    width: 100%;
-    height: 10px;
 }
 
 .repository2 .text {
     font-size: var(--font-small);
     font-weight: 400;
-    height: 70%;
+    height: calc(var(--font-small)*6);
     width: 85%;
     text-align: left;
+}
+
+
+.repository2 .info {
+    font-size: var(--font-small);
+    font-weight: 400;
+    height: calc(var(--font-small)*2);
+    width: 85%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.repository2 .hspace {
+    margin-right: 10px;
+}
+
+.repository2 .info svg {
+    width: var(--font-small);
+    height: var(--font-small);
+    margin-right: 2px;
 }
 
 .repository2 .textlink {
@@ -86,14 +93,33 @@
 
 .repository2 .repolink {
     position: absolute;
-    display: block;
-    bottom: 0px;
-    right: 10px;
-    width: 35px;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    bottom: 6px;
+    right: 6px;
+    width: 36px;
+    height: 36px;
     transition: all .4s;
+    background-color: #FCE9C9;
+    border-radius: 50%;
+    border: #665F52;
+    border-style: solid;
+}
+
+.repository2:hover {
+    .repolink {
+        width: 48px;
+        height: 48px;
+        bottom: 4px;
+        right: 4px;
+    }
 }
 
 .repository2 img {
-    width: 100%;
+    width: 36px;
+    height: 36px;
     cursor: pointer;
 }
