@@ -122,4 +122,6 @@
     width: 36px;
     height: 36px;
     cursor: pointer;
+    border-radius: 50%;
+    background-color: #fdf4d5;
 }
