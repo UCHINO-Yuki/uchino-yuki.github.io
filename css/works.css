@@ -96,12 +96,13 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 10px;
+    justify-content: space-between;
 }
 
 .work2 .abst .checkbox {
     appearance: none;
     width: fit-content;
-    padding: 5px 10px;
+    padding: 10px 10px;
     height: 30px;
     border: 2px solid #665F52;
     border-radius: 5px;
@@ -110,6 +111,7 @@
     transition: all 0.2s ease-in-out;
     align-items: center;
     font-size: var(--font-tiny);
+    background-color: #FCE9C9;
 }
 
 .work2 .abst .checkbox:before {

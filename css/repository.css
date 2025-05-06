@@ -60,31 +60,13 @@
 .repository2 .text {
     font-size: var(--font-small);
     font-weight: 400;
-    height: calc(var(--font-small)*6);
+    height: calc(var(--font-small)*7);
     width: 85%;
-    text-align: left;
-}
-
-
-.repository2 .info {
-    font-size: var(--font-small);
-    font-weight: 400;
-    height: calc(var(--font-small)*2);
-    width: 85%;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
     text-align: left;
 }
 
 .repository2 .hspace {
     margin-right: 10px;
-}
-
-.repository2 .info svg {
-    width: var(--font-small);
-    height: var(--font-small);
-    margin-right: 2px;
 }
 
 .repository2 .textlink {
