@@ -71,7 +71,7 @@ body {
     background-color: #f8f6e2;
 }
 
-.section {
+.sec-title {
     font-size: var(--font-large);
     width: 100%;
     margin-top: var(--section-space-top);

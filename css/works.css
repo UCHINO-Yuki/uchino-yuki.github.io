@@ -100,6 +100,7 @@
 }
 
 .work2 .abst .copy-btn {
+    color: #333;
     display: none;
     width: fit-content;
     padding: 10px 10px;
@@ -112,6 +113,11 @@
     align-items: center;
     font-size: var(--font-tiny);
     background-color: #FCE9C9;
+    transition: 400ms;
+}
+
+.work2 .abst .copy-btn:active {
+    transform: scale(0.8, 0.8);
 }
 
 .work2 .abst .hidebox {
@@ -131,10 +137,15 @@
     align-items: center;
     font-size: var(--font-tiny);
     background-color: #FCE9C9;
+    color: #333;
 }
 
 .work2 .abst .checkbox:before {
     content: "Show abstract";
+}
+
+.work2 .abst .checkbox:active {
+    transform: scale(0.8, 0.8);
 }
 
 .work2 .abst .checkbox:checked {
