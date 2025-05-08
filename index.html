@@ -74,37 +74,32 @@
     <aside>
         <ul>
             <li>
-                <a href="#sec-Profile">
-                    <span class="ja">プロフィール</span>
-                    <span class="en">Profile</span>
+                <a href="#sec-Title">
+                    <span>Profile</span>
                 </a>
             </li>
 
             <li>
                 <a href="#sec-Curriculum-vitae">
-                    <span class="ja">経歴</span>
-                    <span class="en">Curriculum vitae</span>
+                    <span>Curriculum vitae</span>
                 </a>
             </li>
 
             <li>
                 <a href="#sec-Works">
-                    <span class="ja">最近の業績</span>
-                    <span class="en">Recent Works</span>
+                    <span>Recent Works</span>
                 </a>
             </li>
 
             <li>
                 <a href="#sec-Software">
-                    <span class="ja">公開ソフトウェア</span>
-                    <span class="en">Public Software</span>
+                    <span>Public Software</span>
                 </a>
             </li>
 
             <li>
                 <a href="#sec-Links">
-                    <span class="ja">関連リンク</span>
-                    <span class="en">Links</span>
+                    <span>Links</span>
                 </a>
             </li>
         </ul>
@@ -116,37 +111,51 @@
         <!------------->
         <!--- Title --->
         <!------------->
-        <div class="title">
-            <div class="title-left">
-                <img src="fig/Piskel_yuki_PC.gif" alt="" id="title-image">
+        <section>
+            <div class="anc" id="sec-Title"></div>
+            <div class="title">
+                <div class="title-left">
+                    <img src="fig/Piskel_yuki_PC.gif" alt="" id="title-image">
+                </div>
+                <div class="title-right ja">
+                    <div class="title-myname">
+                        <p>内野 佑基</p>
+                        <p>UCHINO Yuki</p>
+                    </div>
+                    <div class="title-contact">
+                        <p>連絡先:</p>
+                        <p>yuki.uchino.fe (at) riken.jp</p>
+                    </div>
+                </div>
+                <div class="title-right en">
+                    <div class="title-myname">
+                        <p>UCHINO, Yuki</p>
+                    </div>
+                    <div class="title-contact">
+                        <p>CONTACT:</p>
+                        <p>yuki.uchino.fe (at) riken.jp</p>
+                    </div>
+                </div>
             </div>
-            <div class="title-right ja">
-                内野 佑基<br>
-                UCHINO Yuki
-            </div>
-            <div class="title-right en">
-                UCHINO Yuki<br>
-                内野 佑基
-            </div>
-        </div>
+        </section>
 
 
         <!---------------->
         <!--- Profile  --->
         <!---------------->
-        <section id="sec-Profile">
-            <div class="sec-title">
+        <section>
+            <div id="sec-title-Profile">
                 Profile
             </div>
 
             <div class="profile ja">
                 <table>
-                    <tr>
+                    <tr class="profile-hide1024">
                         <td>名前:</td>
                         <td class="midtab"></td>
                         <td>内野 佑基</td>
                     </tr>
-                    <tr>
+                    <tr class="profile-hide1024">
                         <td>メール:</td>
                         <td class="midtab"></td>
                         <td>yuki.uchino.fe (at) riken.jp</td>
@@ -174,31 +183,31 @@
                     <tr>
                         <td>所属学会: </td>
                         <td class="midtab"></td>
-                        <td>
-                            日本応用数理学会 (2022.07-)<br>
-                            情報処理学会 (2025.04-)
+                        <td class="profile-multirow">
+                            <p>日本応用数理学会 (2022.07-),</p>
+                            <p>情報処理学会 (2025.04-)</p>
                         </td>
                     </tr>
                     <tr>
                         <td>トピック: </td>
                         <td class="midtab"></td>
-                        <td>
-                            混合精度数値計算<br>
-                            数値線形代数<br>
-                            高性能計算<br>
-                            精度保証付き数値計算
+                        <td class="profile-multirow">
+                            <p>混合精度数値計算,</p>
+                            <p>数値線形代数,</p>
+                            <p>高性能計算,</p>
+                            <p>精度保証付き数値計算</p>
                         </td>
                     </tr>
                 </table>
             </div>
             <div class="profile en">
                 <table>
-                    <tr>
+                    <tr class="profile-hide1024">
                         <td>Name:</td>
                         <td class="midtab"></td>
                         <td>Yuki UCHINO</td>
                     </tr>
-                    <tr>
+                    <tr class="profile-hide1024">
                         <td>Email:</td>
                         <td class="midtab"></td>
                         <td>yuki.uchino.fe (at) riken.jp</td>
@@ -219,29 +228,21 @@
                         <td>he / him / his</td>
                     </tr>
                     <tr>
-                        <td>Height:</td>
+                        <td>Memberships:</td>
                         <td class="midtab"></td>
-                        <td>14 apples</td>
+                        <td class="profile-multirow">
+                            <p>The Japan Society for Industrial and Applied Mathematics,</p>
+                            <p>Information Processing Society of Japan</p>
+                        </td>
                     </tr>
-                    <tr>
-                        <td>Weight:</td>
-                        <td class="midtab"></td>
-                        <td>230 apples</td>
-                    </tr>
-                    <!-- <tr>
-                            <td>Memberships:</td>
-                            <td class="midtab"></td>
-                            <td>The Japan Society for Industrial and Applied Mathematics<br>
-                                Information Processing Society of Japan</td>
-                        </tr> -->
                     <tr>
                         <td>Interests:</td>
                         <td class="midtab"></td>
-                        <td>
-                            Mixed-Precision Computing<br>
-                            Numerical Linear Algebra<br>
-                            High Performance Computing<br>
-                            Self-Validating Methods
+                        <td class="profile-multirow">
+                            <p>Mixed-Precision Computing,</p>
+                            <p>Numerical Linear Algebra,</p>
+                            <p>High Performance Computing,</p>
+                            <p>Self-Validating Methods</p>
                         </td>
                     </tr>
                 </table>
@@ -252,7 +253,8 @@
         <!---------------->
         <!--- Timeline --->
         <!---------------->
-        <section id="sec-Curriculum-vitae">
+        <section>
+            <div class="anc" id="sec-Curriculum-vitae"></div>
             <div class="sec-title">
                 Curriculum vitae
             </div>
@@ -485,7 +487,8 @@
         <!------------->
         <!--- works --->
         <!------------->
-        <section id="sec-Works" data-nosnippet>
+        <section data-nosnippet>
+            <div class="anc" id="sec-Works"></div>
             <div class="sec-title">
                 Recent Works
             </div>
@@ -768,7 +771,8 @@
         <!-------------->
         <!--- GitHub --->
         <!-------------->
-        <section id="sec-Software" data-nosnippet>
+        <section data-nosnippet>
+            <div class="anc" id="sec-Software"></div>
             <div class="sec-title">
                 Public Software
             </div>
@@ -937,7 +941,6 @@
 </body>
 
 <script src="js/loading.js"></script>
-<script src="js/table.js"></script>
 <script src="js/control-lang.js"></script>
 <script src="js/go-to-top.js"></script>
 <script type="module" src="js/cpy-btn.js"></script>

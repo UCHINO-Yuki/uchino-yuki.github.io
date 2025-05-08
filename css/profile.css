@@ -10,9 +10,30 @@
     line-height: 1.4;
 }
 
+#sec-title-Profile {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
     .profile {
         width: 100%;
+    }
+
+    .profile-hide1024 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #sec-title-Profile {
+        font-family: sushiki, sans-serif;
+        font-weight: 500;
+        font-size: var(--font-large);
+        width: 100%;
+        margin-bottom: var(--font-large);
+        color: #665F52;
+        justify-content: center;
+        display: flex;
     }
 }
 
@@ -26,12 +47,17 @@
 .profile table,
 .profile table td,
 .profile table th {
-    border-bottom: 1.5px solid #CCBDA3;
+    border-bottom: 1px solid #CCBDA3;
+}
+
+.profile-multirow p {
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .profile table tr td {
     text-align: left;
-    padding-top: 14px;
+    padding-top: 12px;
 }
 
 .profile table tr:hover {
