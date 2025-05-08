@@ -33,12 +33,3 @@
         transform: rotate(360deg);
     }
 }
-
-#main-content {
-    display: none;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow-y: auto;
-    background-color: #f8f6e2;
-}
