@@ -5,6 +5,11 @@
 }
 
 /* font */
+@font-face {
+    font-family: 'sushiki';
+    src: url('../font/sushiki_ub/sushiki_ub.ttf') format('truetype');
+}
+
 body {
     font-family: "Lato", sans-serif;
     --font-large: 60px;
@@ -72,6 +77,8 @@ body {
 }
 
 .sec-title {
+    font-family: sushiki, sans-serif;
+    font-weight: 500;
     font-size: var(--font-large);
     width: 100%;
     margin-top: var(--section-space-top);

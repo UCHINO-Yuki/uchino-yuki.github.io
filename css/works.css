@@ -162,16 +162,21 @@
     display: block;
 }
 
-.achievement_link {
-    width: fit-content;
-    color: #575044;
+.achievement_link_box {
+    width: 100%;
+    display: flex;
     align-content: center;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
-.achievement_link img {
+.achievement_link_box .achievement_link {
+    width: fit-content;
+    color: #575044;
+}
+
+.achievement_link_box .achievement_link img {
     margin-left: 5px;
     height: 20px;
     width: auto;
