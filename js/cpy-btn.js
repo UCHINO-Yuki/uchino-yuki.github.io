@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 try {
                     await navigator.clipboard.writeText(cleanedText);
-                    const successToast = new Toast("copied!!", "success", 2000);
+                    const successToast = new Toast("copied!!", "success", { duration: 2000 });
                 } catch (err) {
-                    const successToast = new Toast("failed to copy", "success", 2000);
+                    const successToast = new Toast("failed to copy", "success", { duration: 2000 });
                 }
             }
         });
