@@ -1,4 +1,4 @@
-import { Toast } from './toast.js';
+import { Toast } from "https://cdn.jsdelivr.net/npm/kongari-toast/dist/toast.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".copy-btn").forEach(button => {
