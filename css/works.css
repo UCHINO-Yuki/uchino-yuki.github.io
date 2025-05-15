@@ -53,7 +53,7 @@
 
 .date-journal .date {
     text-align: left;
-    min-width: 100px;
+    min-width: 120px;
 }
 
 .date-journal .journal {
@@ -69,6 +69,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    font-family: "Lato", sans-serif;
 }
 
 .work2 .worktitle a {
@@ -84,6 +85,7 @@
     height: fit-content;
     margin-top: 0;
     margin-bottom: 30px;
+    font-family: "Lato", sans-serif;
 }
 
 .work2 .abst {

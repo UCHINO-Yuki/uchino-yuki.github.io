@@ -7,16 +7,26 @@
 /* font */
 @font-face {
     font-family: 'sushiki';
-    src: url('../font/sushiki_ub/sushiki_ub.ttf') format('truetype');
+    src: url('../font/sushiki_ub.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'utakata';
+    src: url('../font/Utatane-Regular.ttf') format('truetype');
 }
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'utakata', "Lato", sans-serif;
     --font-large: 60px;
     --font-middle: 32px;
     --font-small: 28px;
     --font-tiny: 24px;
     --section-space-bottom: 100px;
+}
+
+button,
+input {
+    font-family: 'utakata', "Lato", sans-serif;
 }
 
 @media screen and (max-width: 1920px) {
