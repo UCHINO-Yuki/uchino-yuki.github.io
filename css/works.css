@@ -158,6 +158,7 @@
 .work2 .abst .abst-hide {
     margin-top: 10px;
     display: none;
+    font-family: "Lato", sans-serif;
 }
 
 .work2 .abst .checkbox:checked+.abst-hide {
