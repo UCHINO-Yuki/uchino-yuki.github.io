@@ -17,10 +17,10 @@
 
 body {
     font-family: 'utakata', "Lato", sans-serif;
-    --font-large: 60px;
-    --font-middle: 32px;
-    --font-small: 28px;
-    --font-tiny: 24px;
+    --font-large: 50px;
+    --font-middle: 26px;
+    --font-small: 22px;
+    --font-tiny: 20px;
     --section-space-bottom: 100px;
 }
 

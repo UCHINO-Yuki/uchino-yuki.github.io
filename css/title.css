@@ -71,6 +71,6 @@ section:has(.title) {
 
 @media screen and (min-width: 1921px) {
     .title-left img {
-        max-width: 400px;
+        max-width: 300px;
     }
 }
