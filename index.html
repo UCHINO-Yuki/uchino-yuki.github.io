@@ -444,7 +444,8 @@
                                     Shibaura Institute of Technology (Doctoral Program)
                                 </li>
                                 <li>
-                                    Appointed as Research Fellowships for Young Scientists DC1, Japan Society for the Promotion of Science 
+                                    Appointed as Research Fellowships for Young Scientists DC1, Japan Society for the
+                                    Promotion of Science
                                 </li>
                             </ul>
                         </dd>
@@ -500,6 +501,55 @@
             </div>
 
             <div class="work">
+
+                <div class="work2">
+                    <div class="date-journal">
+                        <span class="date">
+                            Aug. 06, 2025
+                        </span>
+                        <span class="journal">
+                            arXiv
+                        </span>
+                    </div>
+                    <div class="worktitle">
+                        <a href="https://doi.org/10.48550/arXiv.2508.03984" target="_blank" rel="noopener noreferrer"
+                            alt="" title="read paper">
+                            High-Performance and Power-Efficient Emulation of Matrix Multiplication using INT8 Matrix
+                            Engines
+                        </a>
+                    </div>
+                    <div class="author"><u>Y. Uchino</u>, K. Ozaki, T. Imamura</div>
+                    <div class="abst">
+                        <button class="copy-btn">Copy BibTeX</button>
+                        <textarea class="hidebox" readonly>
+                            @misc{uchino2025highperformancepowerefficientemulationmatrix,
+                                title={High-Performance and Power-Efficient Emulation of Matrix Multiplication using INT8 Matrix Engines}, 
+                                author={Yuki Uchino and Katsuhisa Ozaki and Toshiyuki Imamura},
+                                year={2025},
+                                eprint={2508.03984},
+                                archivePrefix={arXiv},
+                                primaryClass={cs.DC},
+                                url={https://arxiv.org/abs/2508.03984}, 
+                            }
+                        </textarea>
+                        <input type="checkbox" class="checkbox">
+                        <div class="abst-hide">
+                            Recent architectures integrate high-performance and power-efficient matrix engines. These
+                            engines demonstrate remarkable performance in low-precision matrix multiplication, which is
+                            crucial in deep learning. Several techniques have been proposed to emulate single- and
+                            double-precision general matrix-matrix multiplication (SGEMM and DGEMM, respectively) by
+                            leveraging such low-precision matrix engines. In this study, we present emulation methods
+                            that significantly outperforms conventional approaches. On a GH200 Grace Hopper Superchip,
+                            the proposed DGEMM emulation achieves a 1.4x speedup and a 43% improvement in power
+                            efficiency compared to native DGEMM for sufficiently large problems. The proposed SGEMM
+                            emulation achieves a 3.0x speedup and a 154% improvement in power efficiency compared to
+                            native SGEMM for sufficiently large problems. Furthermore, compared to conventional
+                            emulation methods, the proposed emulation achieves more than 2x higher performance and
+                            superior power efficiency.
+                        </div>
+                    </div>
+                </div>
+
                 <div class="work2">
                     <div class="date-journal">
                         <span class="date">
@@ -694,66 +744,6 @@
                             These
                             approaches
                             are expected to yield more efficient results in next-generation architectures.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="work2">
-                    <div class="date-journal">
-                        <span class="date">
-                            Nov. 17-22, 2024
-                        </span>
-                        <span class="journal">
-                            SC24-W
-                        </span>
-                    </div>
-                    <div class="worktitle">
-                        <a href="https://doi.org/10.1109/SCW63240.2024.00213" target="_blank" rel="noopener noreferrer"
-                            alt="" title="read paper">
-                            High-Performance Eigensolver Combining EigenExa and Iterative Refinement
-                        </a>
-                    </div>
-                    <div class="author"><u>Y. Uchino</u>, T. Imamura</div>
-                    <div class="abst">
-                        <button class="copy-btn">Copy BibTeX</button>
-                        <textarea class="hidebox" readonly>
-                            @INPROCEEDINGS{uchino2024high-performance,
-                                author={Uchino, Yuki and Imamura, Toshiyuki},
-                                booktitle={SC24-W: Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis}, 
-                                title={High-Performance Eigensolver Combining EigenExa and Iterative Refinement}, 
-                                year={2024},
-                                volume={},
-                                number={},
-                                pages={1703-1712},
-                                doi={10.1109/SCW63240.2024.00213}
-                            }
-                        </textarea>
-                        <input type="checkbox" class="checkbox">
-                        <div class="abst-hide">
-                            This study proposes a high-performance and reliable eigensolver via mixed-precision
-                            arithmetic
-                            between ordinary and highly-accurate precisions. Eigenvalue decomposition is ubiquitous
-                            in
-                            simulations. Various eigensolvers for computing approximations have been developed thus
-                            far.
-                            If
-                            eigenvalues are narrowly clustered, the computation of eigenvectors may be ill-posed.
-                            Thus,
-                            the
-                            computed eigenpairs may not be sufficiently accurate and lack reliability. In this
-                            study, we
-                            introduce mixed-precision iterative refinement methods to improve the accuracy of
-                            eigenvectors
-                            obtained using numerical methods. This approach contributes to obtaining sufficiently
-                            accurate
-                            results without arbitrary precision eigensolvers. We construct a high-performance and
-                            reliable
-                            eigensolver by combining the iterative refinement methods and EigenExa, a modern
-                            high-performance solver for large-scale and highly parallel computations. Numerical
-                            experiment
-                            results demonstrate the accuracy of the results and performance benchmark of the
-                            proposed
-                            approach.
                         </div>
                     </div>
                 </div>
