@@ -115,7 +115,7 @@
 }
 
 .container dd .space {
-    height: 20px;
+    height: var(--font-small);
 }
 
 @media screen and (max-width: 640px) {
@@ -130,7 +130,12 @@
     .container dd {
         margin-left: 0%;
         padding-left: 0px;
+        padding-bottom: 10px;
         background: none;
+    }
+
+    .container dl:hover {
+        background-color: #f8f6e2;
     }
 
     .container dd:before {

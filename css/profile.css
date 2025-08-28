@@ -50,9 +50,20 @@
     border-bottom: 1px solid #CCBDA3;
 }
 
+.profile-multirow {
+    white-space: normal;
+}
+
 .profile-multirow p {
-    display: block;
     margin-right: 10px;
+}
+
+.profile-multirow p span {
+    display: inline-block;
+}
+
+.profile-multirow span {
+    display: inline-block;
 }
 
 .profile table tr td {
