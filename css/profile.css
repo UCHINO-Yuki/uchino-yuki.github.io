@@ -51,7 +51,7 @@
 }
 
 .profile-multirow p {
-    display: inline-block;
+    display: block;
     margin-right: 10px;
 }
 
