@@ -41,6 +41,44 @@
     }
 }
 
+.work .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.work .filter-btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 2px solid #665F52;
+    background-color: #fdf4d5;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.work .filter-btn:hover {
+    background-color: #ffeaa7;
+}
+
+.work .filter-btn.active {
+    background-color: #665F52;
+    color: white;
+}
+
+.work .filter-btn:active {
+    transform: scale(0.8, 0.8);
+}
+
+.work .hidden {
+    display: none;
+}
+
 .work2 .date-journal {
     font-size: var(--font-tiny);
     width: 95%;
@@ -152,7 +190,7 @@
 
 .work2 .abst .checkbox:checked {
     background-color: #665F52;
-    color: #FCE9C9;
+    color: white;
 }
 
 .work2 .abst .abst-hide {

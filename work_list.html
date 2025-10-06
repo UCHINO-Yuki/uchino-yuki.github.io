@@ -1,0 +1,1028 @@
+<div class="filter-buttons">
+    <button class="filter-btn active" data-year="2025">2025</button>
+    <button class="filter-btn" data-year="2024">2024</button>
+    <button class="filter-btn" data-year="2023">2023</button>
+    <button class="filter-btn" data-year="2022">2022</button>
+    <button class="filter-btn" data-year="2021">2021</button>
+    <button class="filter-btn" data-year="2020">2020</button>
+    <button class="filter-btn" data-year="2019">2019</button>
+</div>
+
+<div class="achievement_link_box">
+    <a href="https://researchmap.jp/yukiuchino?lang=ja" target="_blank" rel="noopener noreferrer" alt=""
+        title="researchmap" class="ja achievement_link">
+        業績一覧はこちら<img src="fig/window_button.png" alt="">
+    </a>
+    <a href="https://researchmap.jp/yukiuchino?lang=en" target="_blank" rel="noopener noreferrer" alt=""
+        title="researchmap" class="en achievement_link">
+        A listing of achievements<img src="fig/window_button.png" alt="">
+    </a>
+</div>
+
+<div class="work2" data-year="2025">
+    <div class="date-journal">
+        <span class="date">
+            Aug. 06, 2025
+        </span>
+        <span class="journal">
+            arXiv
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://doi.org/10.48550/arXiv.2508.03984" target="_blank" rel="noopener noreferrer" alt=""
+            title="read paper">
+            High-Performance and Power-Efficient Emulation of Matrix Multiplication using INT8 Matrix
+            Engines
+        </a>
+    </div>
+    <div class="author"><u>Y. Uchino</u>, K. Ozaki, T. Imamura</div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @misc{uchino2025highperformancepowerefficientemulationmatrix,
+                title={High-Performance and Power-Efficient Emulation of Matrix Multiplication using INT8 Matrix Engines}, 
+                author={Yuki Uchino and Katsuhisa Ozaki and Toshiyuki Imamura},
+                year={2025},
+                eprint={2508.03984},
+                archivePrefix={arXiv},
+                primaryClass={cs.DC},
+                url={https://arxiv.org/abs/2508.03984}, 
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            Recent architectures integrate high-performance and power-efficient matrix engines. These
+            engines demonstrate remarkable performance in low-precision matrix multiplication, which is
+            crucial in deep learning. Several techniques have been proposed to emulate single- and
+            double-precision general matrix-matrix multiplication (SGEMM and DGEMM, respectively) by
+            leveraging such low-precision matrix engines. In this study, we present emulation methods
+            that significantly outperforms conventional approaches. On a GH200 Grace Hopper Superchip,
+            the proposed DGEMM emulation achieves a 1.4x speedup and a 43% improvement in power
+            efficiency compared to native DGEMM for sufficiently large problems. The proposed SGEMM
+            emulation achieves a 3.0x speedup and a 154% improvement in power efficiency compared to
+            native SGEMM for sufficiently large problems. Furthermore, compared to conventional
+            emulation methods, the proposed emulation achieves more than 2x higher performance and
+            superior power efficiency.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2025">
+    <div class="date-journal">
+        <span class="date">
+            Jul. 28, 2025
+        </span>
+        <span class="journal">
+            研究報告ハイパフォーマンスコンピューティング（HPC）
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://ipsj.ixsq.nii.ac.jp/records/2003164" target="_blank" rel="noopener noreferrer" alt=""
+            title="read paper">
+            INT8による倍精度複素行列積エミュレーションの高速化と混合精度入出力に対応したライブラリの実装
+        </a>
+    </div>
+    <div class="author">中嶋 陸, <u>内野 佑基</u>, 成見 哲, 今村 俊幸</div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @techreport{oai:ipsj.ixsq.nii.ac.jp:02003164,
+                author = {中嶋,陸 and 内野,佑基 and 成見,哲 and 今村,俊幸},
+                issue = {27},
+                month = {Jul},
+                title = {INT8による倍精度複素行列積エミュレーションの高速化と混合精度入出力に対応したライブラリの実装},
+                year = {2025}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            近年のGPUアーキテクチャは機械学習用途への最適化が進んでおり，INT8やFP16といった低精度演算に特化した行列乗算器が中心となっている．
+            一方で，科学技術計算に不可欠な倍精度浮動小数点（FP64）演算の性能向上は限定的であり，この傾向は今後も継続すると見込まれる．
+            したがって，低精度演算ユニットを活用して高精度演算を実現する手法の重要性は今後さらに高まると考えられる．
+            尾崎スキームは高精度行列積を複数の低精度行列積と高精度加算の組み合わせで実現する手法である．
+            大友らや内野らは尾崎スキームを基に，INT8行列乗算器を用いた倍精度行列乗算のエミュレーション（ozIMMU）を提案した．
+            本研究では，ozIMMUの複素行列積計算への拡張及び混合精度化と実装の最適化を提案する．
+            複素行列積への拡張では，Karatsuba法を用いて実数行列積3回により複素行列積計算を行う方法を導入した．
+            また，実装の最適化により最大で約5倍の高速化を確認した．
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2025">
+    <div class="date-journal">
+        <span class="date">
+            Apr. 10, 2025
+        </span>
+        <span class="journal">
+            arXiv
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://arxiv.org/abs/2504.08009" target="_blank" rel="noopener noreferrer" alt="" title="read paper">
+            Ozaki Scheme II: A GEMM-oriented emulation of floating-point matrix multiplication using
+            an integer modular technique
+        </a>
+    </div>
+    <div class="author">
+        K. Ozaki, <u>Y. Uchino</u>, T. Imamura
+    </div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @misc{ozaki2025ozakischemeiigemmoriented,
+                title={{Ozaki Scheme II}: A {GEMM}-oriented emulation of floating-point matrix multiplication using an integer modular technique}, 
+                author={Katsuhisa Ozaki and Yuki Uchino and Toshiyuki Imamura},
+                year={2025},
+                eprint={2504.08009},
+                archivePrefix={arXiv},
+                primaryClass={cs.MS},
+                doi={10.48550/arXiv.2504.08009},
+                url={https://arxiv.org/abs/2504.08009}, 
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            This paper addresses emulation algorithms for matrix multiplication. General
+            Matrix-Matrix
+            Multiplication (GEMM), a fundamental operation in the Basic Linear Algebra Subprograms
+            (BLAS),
+            is typically optimized for specific hardware architectures. The Ozaki scheme is a
+            well-established GEMM-based emulation method for matrix multiplication, wherein input
+            matrices
+            are decomposed into several low-precision components to ensure that the resulting matrix
+            product
+            is computed exactly through numerical operations.
+            This study proposes a novel GEMM-based emulation method for matrix multiplication that
+            leverages
+            the Chinese Remainder Theorem.
+            The proposed method inherits the computational efficiency of highly optimized GEMM
+            routines
+            and
+            further enables control over the number of matrix multiplications, which can enhance
+            computational accuracy.
+            We present numerical experiments featuring INT8 Tensor Core operations on GPUs and FP64
+            arithmetic on CPUs as case studies. The results demonstrate that FP64 emulation using
+            the
+            proposed method achieves performance levels of up to 7.4 to 9.8 TFLOPS on the NVIDIA RTX
+            4090
+            and 56.6 to 80.2 TFLOPS on the NVIDIA GH200, exceeding the measured performance of
+            native
+            FP64
+            arithmetic. Furthermore, for FP64 computations on CPUs, the proposed method achieved up
+            to a
+            2.3x speedup in emulating quadruple-precision arithmetic compared to the conventional
+            Ozaki
+            scheme.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2025">
+    <div class="date-journal">
+        <span class="date">
+            Mar. 25, 2025
+        </span>
+        <span class="journal">
+            Journal of Advanced Simulation in Science and Engineering
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://doi.org/10.15748/jasse.12.44" target="_blank" rel="noopener noreferrer" alt=""
+            title="read paper">
+            Fast Generation of Real-Symmetric Matrices and their Exact Eigenpairs
+        </a>
+    </div>
+    <div class="author">
+        <u>Y. Uchino</u>, K. Ozaki, T. Terao, T. Imamura
+    </div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @article{uchino2025fast,
+                title={Fast Generation of Real-Symmetric Matrices and their Exact Eigenpairs},
+                author={Yuki Uchino and Katsuhisa Ozaki and Takeshi Terao and Toshiyuki Imamura},
+                journal={Journal of Advanced Simulation in Science and Engineering},
+                volume={12},
+                number={1},
+                pages={44-60},
+                year={2025},
+                doi={10.15748/jasse.12.44}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            We propose a method to rapidly generate matrices for real-symmetric eigenproblems. The
+            proposed
+            method
+            produces a reproducible matrix with explicit eigenpairs, where the distribution of the
+            eigenvalues
+            can
+            be controlled by a user. All elements of the generated matrix are rigorous
+            floating-point
+            numbers
+            and
+            can be represented in simple expressions involving the exact eigenvalues. The exact
+            eigenpairs
+            of
+            the
+            generated matrix are known in advance; thus, the proposed method contributes to the
+            validation
+            of
+            errors
+            in approximate eigenpairs. Several constraints on the matrix generated by the proposed
+            method,
+            were
+            produced theoretically.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2025">
+    <div class="date-journal">
+        <span class="date">
+            Jan. 09, 2025
+        </span>
+        <span class="journal">
+            The International Journal of High Performance Computing Applications
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://doi.org/10.1177/10943420241313064" target="_blank" rel="noopener noreferrer" alt=""
+            title="read paper">
+            Performance enhancement of the Ozaki Scheme on integer matrix multiplication unit
+        </a>
+    </div>
+    <div class="author"><u>Y. Uchino</u>, K. Ozaki, T. Imamura</div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @article{uchino2025performance,
+                author = {Yuki Uchino and Katsuhisa Ozaki and Toshiyuki Imamura},
+                title ={Performance enhancement of the {Ozaki} scheme on integer matrix multiplication unit},
+                journal = {The International Journal of High Performance Computing Applications},
+                volume = {39},
+                number = {3},
+                pages = {462-476},
+                year = {2025},
+                doi = {10.1177/10943420241313064},
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            This study was aimed at simultaneously achieving sufficient accuracy and high
+            performance
+            for
+            general
+            matrix multiplications. Recent architectures, such as NVIDIA GPUs, feature
+            high-performance
+            units
+            designed for low-precision matrix multiplications in machine learning models, and
+            next-generation
+            architectures are expected to follow the same design principle. The key to achieving
+            superior
+            performance is to fully leverage such architectures. The Ozaki scheme, a highly accurate
+            matrix
+            multiplication algorithm using error-free transformations, enables higher-precision
+            matrix
+            multiplication to be performed through multiple lower-precision matrix multiplications
+            and
+            higher-precision matrix additions. Ootomo et al. implemented the Ozaki scheme on
+            high-performance matrix
+            multiplication units with the aim of achieving both sufficient accuracy and high
+            performance.
+            This paper
+            proposes alternative approaches to improving performance by reducing the numbers of
+            lower-precision
+            matrix multiplications and higher-precision matrix additions. Numerical experiments
+            demonstrate
+            the
+            accuracy of the results and conduct performance benchmarks of the proposed approaches.
+            These
+            approaches
+            are expected to yield more efficient results in next-generation architectures.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2024">
+    <div class="date-journal">
+        <span class="date">
+            Nov. 17, 2024
+        </span>
+        <span class="journal">
+            SC24-W: Workshops of the International Conference for High Performance Computing, Networking, Storage and
+            Analysis
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://doi.org/10.1109/SCW63240.2024.00213" target="_blank" rel="noopener noreferrer" alt=""
+            title="read paper">
+            High-Performance Eigensolver Combining EigenExa and Iterative Refinement
+        </a>
+    </div>
+    <div class="author"><u>Y. Uchino</u>, T. Imamura</div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @INPROCEEDINGS{uchino2024highperformance,
+                author = {Yuki Uchino and Toshiyuki Imamura},
+                booktitle={SC24-W: Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis}, 
+                title={High-Performance Eigensolver Combining EigenExa and Iterative Refinement}, 
+                volume = {},
+                number = {},
+                pages = {1703-1712},
+                year = {2024},
+                doi={10.1109/SCW63240.2024.00213},
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            This study proposes a high-performance and reliable eigensolver via mixed-precision arithmetic between
+            ordinary and highly-accurate precisions. Eigenvalue decomposition is ubiquitous in simulations. Various
+            eigensolvers for computing approximations have been developed thus far. If eigenvalues are narrowly
+            clustered, the computation of eigenvectors may be ill-posed. Thus, the computed eigenpairs may not be
+            sufficiently accurate and lack reliability. In this study, we introduce mixed-precision iterative refinement
+            methods to improve the accuracy of eigenvectors obtained using numerical methods. This approach contributes
+            to obtaining sufficiently accurate results without arbitrary precision eigensolvers. We construct a
+            high-performance and reliable eigensolver by combining the iterative refinement methods and EigenExa, a
+            modern high-performance solver for large-scale and highly parallel computations. Numerical experiment
+            results demonstrate the accuracy of the results and performance benchmark of the proposed approach.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2024">
+    <div class="date-journal">
+        <span class="date">
+            Sep. 20, 2024
+        </span>
+        <span class="journal">
+            arXiv
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://doi.org/10.48550/arXiv.2409.13313" target="_blank" rel="noopener noreferrer" alt=""
+            title="read paper">
+            Performance Enhancement of the Ozaki Scheme on Integer Matrix Multiplication Unit
+        </a>
+    </div>
+    <div class="author"><u>Y. Uchino</u>, K. Ozaki, T. Imamura</div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @article{uchino2025performance,
+                author = {Yuki Uchino and Katsuhisa Ozaki and Toshiyuki Imamura},
+                title ={Performance enhancement of the {Ozaki} scheme on integer matrix multiplication unit},
+                journal = {The International Journal of High Performance Computing Applications},
+                volume = {39},
+                number = {3},
+                pages = {462-476},
+                year = {2025},
+                doi = {10.1177/10943420241313064},
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            This study was aimed at simultaneously achieving sufficient accuracy and high performance for general matrix
+            multiplications. Recent architectures, such as NVIDIA GPUs, feature high-performance units designed for
+            low-precision matrix multiplications in machine learning models, and next-generation architectures are
+            expected to follow the same design principle. The key to achieving superior performance is to fully leverage
+            such architectures. The Ozaki scheme, a highly accurate matrix multiplication algorithm using error-free
+            transformations, enables higher-precision matrix multiplication to be performed through multiple
+            lower-precision matrix multiplications and higher-precision matrix additions. Ootomo et al. implemented the
+            Ozaki scheme on high-performance matrix multiplication units with the aim of achieving both sufficient
+            accuracy and high performance. This paper proposes alternative approaches to improving performance by
+            reducing the numbers of lower-precision matrix multiplications and higher-precision matrix additions.
+            Numerical experiments demonstrate the accuracy of the results and conduct performance benchmarks of the
+            proposed approaches. These approaches are expected to yield more efficient results in next-generation
+            architectures.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2024">
+    <div class="date-journal">
+        <span class="date">
+            Sep. 2024
+        </span>
+        <span class="journal">
+            The 43rd JSST Annual International Conference on Simulation Technology Conference Proceedings
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://jsst-conf.jp/2024/" target="_blank" rel="noopener noreferrer" alt="" title="read paper">
+            Fast Generation of Real-Symmetric Matrices for Eigenproblems with Explicit Elements
+        </a>
+    </div>
+    <div class="author"><u>Y. Uchino</u>, K. Ozaki, T. Imamura</div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @inproceedings{uchino2024jsst,
+                title={Fast Generation of Real-Symmetric Matrices for Eigenproblems with Explicit Elements},
+                author={Yuki Uchino and Katsuhisa Ozaki and Toshiyuki Imamura},
+                volume = {},
+                number = {},
+                pages = {103-105},
+                booktitle={The 43rd JSST Annual Conference International Conference on Simulation Technology},
+                month = {Sep},
+                year={2024}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            In this study, we propose a method to rapidly generate a test problem for real-symmetric eigenproblems.
+            The proposed method produces a matrix with explicit eigenpairs, where the eigenvalues have a distribution
+            similar to the expected eigenvalues provided by a user.
+            All elements of the matrix generated using the proposed method can be represented rigorously by
+            floating-point numbers.
+            Fixed eigenvectors are employed in the proposed method, thus enabling the explicit depiction of the entire
+            elements of the generated matrix by simple expressions involving the exact eigenvalues.
+            Additionally, achieving reproducibility of the generated matrix is straightforward.
+            Therefore, the proposed method in this study contributes to the validation of errors in approximate
+            eigenpairs.
+            Several constraints exist for the problem size and the condition number of the matrix that can be generated
+            by the proposed method.
+            During the presentation, we will discuss these constraints and applications of the proposed method to
+            enhance the flexibility of the generated eigenproblem.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2024">
+    <div class="date-journal">
+        <span class="date">
+            Mar. 2024
+        </span>
+        <span class="journal">
+            芝浦工業大学博士学位論文
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://core.ac.uk/download/622135356.pdf" target="_blank" rel="noopener noreferrer" alt=""
+            title="read paper">
+            固有値・特異値分解と行列積に対する高信頼数値計算法の研究
+            <br>
+            (Study on High-Reliability Numerical Methods for Eigenvalue/Singular Value Decomposition and Matrix
+            Multiplication)
+        </a>
+    </div>
+    <div class="author"><u>内野 佑基 (Y. Uchino)</u></div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @article{uchino2024phd,
+                title={固有値・特異値分解と行列積に対する高信頼数値計算法の研究},
+                author={内野 佑基},
+                journal={芝浦工業大学博士学位論文},
+                year={2024},
+                publisher={芝浦工業大学}
+            }
+            
+            or
+
+            @article{uchino2024phd,
+                title={Study on High-Reliability Numerical Methods for Eigenvalue/Singular Value Decomposition and Matrix Multiplication (in Japanese)},
+                author={Yuki Uchino},
+                journal={Ph. D. thesis, Shibaura Institute of Technology},
+                year={2024},
+                publisher={Shibaura Institute of Technology}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            数値計算は一般に誤差を伴う. 誤差の影響は決して無視できるものではなく, 問題や演算精度によっては計算結果に深刻な誤差を伴うことがある.
+            特に近年は計算の高速化や電力効率の改善を目的として低精度演算の利用が活発化されているため, 誤差の影響を考慮することは非常に重要である. そこで,
+            計算結果の信頼性の把握や高信頼な結果を得るための数値計算法の開発が求められる. 本論文では行列積, 実対称固有値分解, 特異値分解に対する高信頼数値計算法の研究成果を紹介する.
+            行列積については, 3 つの点行列の積に対する区間演算法及び高精度行列乗算スキームを用いた高精度な Level 3 BLAS を紹介する. 前者では精度保証付き数値計算の基礎を担う区間演算を扱う.
+            区間演算はある問題に対する真の解の厳密な存在範囲を求める手法であり, 数値計算結果の信頼性を把握することができる. ここで扱う 3 つの点行列に対する区間行列積は, 行列式, 一般化固有値問題, 特異値分解,
+            行列平方根, 行列逆平方根, Sylvester 方程式等の様々な精度保証付き数値計算法において必要不可欠である. 当該研究では, 従来の手法よりもタイトな結果を同程度の計算コストで得られる手法を提案した.
+            また応用として, 3 つの点行列の積の 1-ノルム及び最大値ノルムの上限を求める手法を提案した. 数値実験では, 一般化固有値問題に対する精度保証法を用いて従来法と提案手法を比較し, 提案手法の性能を評価した.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2024">
+    <div class="date-journal">
+        <span class="date">
+            Feb. 2024
+        </span>
+        <span class="journal">
+            Numerical Algorithms
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://doi.org/10.1007/s11075-023-01596-9" target="_blank" rel="noopener noreferrer" alt=""
+            title="read paper">
+            Acceleration of iterative refinement for singular value decomposition
+        </a>
+    </div>
+    <div class="author"><u>Y. Uchino</u>, T. Terao, K. Ozaki</div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @article{uchino2024acceleration,
+                title={Acceleration of iterative refinement for singular value decomposition},
+                author={Uchino, Yuki and Terao, Takeshi and Ozaki, Katsuhisa},
+                journal={Numerical Algorithms},
+                volume={95},
+                number={2},
+                pages={979--1009},
+                year={2024},
+                publisher={Springer}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            We propose fast numerical algorithms to improve the accuracy of singular vectors for a real matrix.
+            Recently, Ogita and Aishima proposed an iterative refinement algorithm for singular value decomposition that
+            is constructed with highly accurate matrix multiplications carried out six times per iteration. The
+            algorithm runs for the problem that has no multiple and clustered singular values. In this study, we show
+            that the same algorithm can be run with highly accurate matrix multiplications carried out five times. Also,
+            we proposed four algorithms constructed with highly accurate matrix multiplications, two algorithms with the
+            multiplications carried out four times, and the other two with the multiplications carried out five times.
+            These algorithms adopt the idea of a mixed-precision iterative refinement method for linear systems.
+            Numerical experiments demonstrate speed-up and quadratic convergence of the proposed algorithms. As a
+            result, the fastest algorithm is 1.7 and 1.4 times faster than the Ogita-Aishima algorithm per iteration on
+            a CPU and GPU, respectively.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2023">
+    <div class="date-journal">
+        <span class="date">
+            Aug. 2023
+        </span>
+        <span class="journal">
+            The 42nd JSST Annual International Conference on Simulation Technology Conference Proceedings
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://jsst-conf.jp/2023/" target="_blank" rel="noopener noreferrer" alt="" title="read paper">
+            Fast and accurate symmetric rank-$k$ operation
+        </a>
+    </div>
+    <div class="author"><u>Y. Uchino</u>, K. Ozaki</div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @inproceedings{uchino2023jsst,
+                title={Fast and accurate symmetric rank-$k$ operation},
+                author={Yuki Uchino and Katsuhisa Ozaki},
+                volume = {},
+                number = {},
+                pages = {268-271},
+                booktitle={The 42nd JSST Annual Conference International Conference on Simulation Technology},
+                month = {Aug},
+                year={2023}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            We propose an alternative approach for the symmetric rank-$k$ operation $A^TA$ for a real $k \times n$
+            matrix $A$.
+            For a matrix product, the accurate algorithm by using error-free transformation is proposed.
+            That algorithm offers advantages in terms of computing speed, high parallelism, and reproducibility.
+            Hopefully, $A^TA$ should be computed at half the cost of a general matrix product, however, it is impossible
+            with the algorithm.
+            Our proposed algorithm is performed at almost half the cost of a general matrix product.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2023">
+    <div class="date-journal">
+        <span class="date">
+            Aug. 2023
+        </span>
+        <span class="journal">
+            The 42nd JSST Annual International Conference on Simulation Technology Conference Proceedings
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://jsst-conf.jp/2023/" target="_blank" rel="noopener noreferrer" alt="" title="read paper">
+            Computation method for an upper bound of the maximum norm of a matrix product
+        </a>
+    </div>
+    <div class="author">Y. Zhao, K. Ozaki, <u>Y. Uchino</u></div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @inproceedings{zhao2023jsst,
+                title={Computation method for an upper bound of the maximum norm of a matrix product},
+                author={Yaxuan Zhao and Katsuhisa Ozaki and Yuki Uchino},
+                volume = {},
+                number = {},
+                pages = {272-275},
+                booktitle={The 42nd JSST Annual Conference International Conference on Simulation Technology},
+                month = {Aug},
+                year={2023}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            This paper discusses algorithms producing an upper bound of the maximum norm of a matrix product using only
+            standard floating-point arithmetic.
+            This upper bound plays an essential role in verified numerical computations.
+            This paper compares several implementations using a priori error estimates and discusses which methods are
+            fast and efficient for verified numerical computations.
+            Besides, this paper proposes a new method that combines block matrix computations and the running error.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2023">
+    <div class="date-journal">
+        <span class="date">
+            Apr. 10, 2023
+        </span>
+        <span class="journal">
+            Journal of Advanced Simulation in Science and Engineering
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://doi.org/10.15748/jasse.10.83" target="_blank" rel="noopener noreferrer" alt=""
+            title="read paper">
+            Inclusion Methods for Multiplication of Three Point Matrices
+        </a>
+    </div>
+    <div class="author"><u>Y. Uchino</u>, K. Ozaki, T. Terao</div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @article{uchino2023inclusion,
+                title={Inclusion Methods for Multiplication of Three Point Matrices},
+                author={Yuki Uchino and Katsuhisa Ozaki and Takeshi Terao},
+                journal={Journal of Advanced Simulation in Science and Engineering},
+                volume={10},
+                number={1},
+                pages={83-101},
+                year={2023},
+                doi={10.15748/jasse.10.83}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            This study considers inclusion methods for the multiplication of three point matrices. These methods are
+            essential for verification methods such as for a matrix determinant, generalized eigenvalue decomposition,
+            singular value decomposition, square roots and inverse square roots of a matrix, and Sylvester equations. We
+            consider three methods that involve five matrix multiplications and compare the tightness of enclosures and
+            numerical experiments. The proposed methods produce tighter results than the previous method with the same
+            computational cost. We also show methods for obtaining the upper bound of the maximum norm of a product of
+            three point matrices.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2022">
+    <div class="date-journal">
+        <span class="date">
+            Nov. 24, 2022
+        </span>
+        <span class="journal">
+            研究報告ハイパフォーマンスコンピューティング（HPC）
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://ipsj.ixsq.nii.ac.jp/records/222663" target="_blank" rel="noopener noreferrer" alt=""
+            title="read paper">
+            特異値分解に対する反復改良法の大規模並列環境における実装と評価
+        </a>
+    </div>
+    <div class="author">
+        <u>内野 佑基</u>, 尾崎 克久
+    </div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @techreport{oai:ipsj.ixsq.nii.ac.jp:00222663,
+                author = {内野, 佑基 and 尾崎, 克久},
+                issue = {20},
+                month = {Nov},
+                title = {特異値分解に対する反復改良法の大規模並列環境における実装と評価},
+                year = {2022}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            特異値分解に対する反復改良法を大規模並列環境において実装した結果を報告する．
+            現在までに，特異値問題を解く様々な数値計算法が開発されている．
+            荻田と相島は，近似特異値・特異ベクトルの精度を改善する反復改良法を提案した．
+            この反復改良法は 1 反復あたり 6 回の高精度行列積で構成されているが，著者らによって 4 回の高精度行列積で計算できることが示されている．
+            また，著者らはより低コストな反復改良法として，1 反復あたり高精度行列積 2 回分のコストを要する手法を提案した．
+            本研究では，ScaLAPACKのサブルーチンと尾崎らによる高精度な行列積計算スキームを用いて，荻田と相島の手法と著者らの手法を大規模並列環境において実装した．
+            数値実験として，大規模並列環境上で性能を評価した結果を紹介する．
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2022">
+    <div class="date-journal">
+        <span class="date">
+            Aug. 2022
+        </span>
+        <span class="journal">
+            The 41st JSST Annual International Conference on Simulation Technology Conference Proceedings
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://jsst-conf.jp/2022/" target="_blank" rel="noopener noreferrer" alt="" title="read paper">
+            Inclusion Methods for Multiplication of Three Point Matrices
+        </a>
+    </div>
+    <div class="author"><u>Y. Uchino</u>, K. Ozaki, T. Terao</div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @inproceedings{uchino2022jsst,
+                title={Inclusion Methods for Multiplication of Three Point Matrices},
+                author={Yuki Uchino and Katsuhisa Ozaki and Takeshi Terao},
+                volume = {},
+                number = {},
+                pages = {58-61},
+                booktitle={The 41st JSST Annual Conference International Conference on Simulation Technology},
+                month = {Aug},
+                year={2022}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            This study considers inclusion methods for the multiplication of three point matrices.
+            These methods are essential for verified numerical computations in methods such as generalized eigenvalue
+            decomposition and singular value decomposition.
+            We consider three methods that use five matrix multiplications and compare the tightness of enclosures using
+            analysis and numerical experiments.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2022">
+    <div class="date-journal">
+        <span class="date">
+            Aug. 2022
+        </span>
+        <span class="journal">
+            The 41st JSST Annual International Conference on Simulation Technology Conference Proceedings
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://jsst-conf.jp/2022/" target="_blank" rel="noopener noreferrer" alt="" title="read paper">
+            Test floating-point matrices with specified solutions for numerical linear algebra
+        </a>
+    </div>
+    <div class="author">K. Ozaki, T. Terao, <u>Y. Uchino</u></div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @inproceedings{ozaki2022jsst,
+                title={Test floating-point matrices with specified solutions for numerical linear algebra},
+                author={Katsuhisa Ozaki and Takeshi Terao and Yuki Uchino},
+                volume = {},
+                number = {},
+                pages = {54-57},
+                booktitle={The 41st JSST Annual Conference International Conference on Simulation Technology},
+                month = {Aug},
+                year={2022}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2022">
+    <div class="date-journal">
+        <span class="date">
+            Jul. 28, 2022
+        </span>
+        <span class="journal">
+            IPSJ Transactions on Advanced Computing System
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://ipsj.ixsq.nii.ac.jp/records/219081" target="_blank" rel="noopener noreferrer" alt=""
+            title="read paper">
+            実対称固有値分解に対する反復改良法の高速化<br>
+            (Acceleration of Iterative Refinement for Symmetric Eigenvalue Decomposition)
+        </a>
+    </div>
+    <div class="author">
+        <u>内野 佑基</u>, 尾崎 克久, 荻田 武史<br>
+        (<u>Y. Uchino</u>, K. Ozaki, T. Ogita)
+    </div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @article{uchino2022acceleration,
+                author = {内野, 佑基 and 尾崎, 克久 and 荻田, 武史},
+                issue = {1},
+                journal = {情報処理学会論文誌コンピューティングシステム（ACS）},
+                month = {Jul},
+                pages = {1--12},
+                title = {実対称固有値分解に対する反復改良法の高速化},
+                volume = {15},
+                year = {2022}
+            }
+
+            or
+            
+            @article{uchino2022acceleration,
+                author = {Yuki, Uchino and Katsuhisa, Ozaki and Takeshi, Ogita},
+                issue = {1},
+                journal = {IPSJ Transactions on Advanced Computing System},
+                month = {Jul},
+                pages = {1--12},
+                title = {Acceleration of Iterative Refinement for Symmetric Eigenvalue Decomposition},
+                volume = {15},
+                year = {2022}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            本論文では，荻田と相島が提案した実対称固有値分解に対する反復改良法の高速化手法を提案する．
+            標準固有値問題に対する数値計算法は現在までに様々なものが提案されている．
+            近年，荻田と相島はある程度正確な近似固有対に対して2次収束性を持つ反復改良法を提案した．
+            この手法は1反復あたり主に4回の高精度行列積で構成されている．
+            本研究では，固有値に重複・クラスタが存在しない問題について，荻田・相島法と同程度の収束性をより高速に得る反復改良法を設計した．
+            本手法は1反復あたり主に3回の高精度行列積で構成されている．
+            また，エラーフリー行列積を用いた反復改良法の要求精度の調査と実装の工夫によりさらなる高速化を図った．
+            数値実験では2反復した際のそれらの有効性を示す．
+            最後に，一般化固有値問題への拡張も紹介する．<br>
+            We propose algorithms to accelerate iterative refinement for symmetric eigenvalue decomposition proposed by
+            Ogita and Aishima. Various numerical algorithms have been developed for standard eigenvalue problems.
+            Recently, Ogita and Aishima proposed an efficient refinement algorithm which converges quadratically if a
+            modestly accurate initial guess is given. That is constructed via four highly accurate matrix
+            multiplications per an iteration. In this study, we design the variant of that refinement algorithm for
+            matrices whose all eigenvalues are simple. That is constructed via three highly accurate matrix
+            multiplications per an iteration. The proposed method achieves results of almost the same quality as the
+            original algorithm proposed by Ogita and Aishima if eigenvalues are all simple and not clustered. Moreover,
+            we investigate the required arithmetic precision for refinement algorithms using error-free matrix
+            multiplications and further accelerate those by devising implementations. Numerical experiments illustrate
+            the efficiency of the proposed algorithm for two iterations. We also extend our idea to generalized
+            eigenvalue problems.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2021">
+    <div class="date-journal">
+        <span class="date">
+            Sep. 2021
+        </span>
+        <span class="journal">
+            The 40th JSST Annual International Conference on Simulation Technology Conference Proceedings
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://jsst-conf.jp/2021/" target="_blank" rel="noopener noreferrer" alt="" title="read paper">
+            Acceleration of Iterative Refinement for Symmetric Eigenvalue Decomposition
+        </a>
+    </div>
+    <div class="author"><u>Y. Uchino</u>, K. Ozaki</div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @inproceedings{uchino2021jsst,
+                title={Acceleration of Iterative Refinement for Symmetric Eigenvalue Decomposition},
+                author={Yuki Uchino and Katsuhisa Ozaki},
+                volume = {},
+                number = {},
+                pages = {273-274},
+                booktitle={The 40th JSST Annual Conference International Conference on Simulation Technology},
+                month = {Sep},
+                year={2021}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            This study considers a refinement algorithm for the eigenvalue decomposition of a real symmetric matrix.
+            Various numerical algorithms have been developed for standard eigenvalue problems.
+            Recently, Ogita and Aishima proposed efficient refinement algorithms for improving approximate eigenpairs
+            obtained using a numerical algorithm.
+            In this study, we aim to reduce computational cost of those refinement algorithms.
+            Numerical experiments illustrate the efficiency of the proposed algorithm.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2021">
+    <div class="date-journal">
+        <span class="date">
+            Mar. 08, 2021
+        </span>
+        <span class="journal">
+            Journal of Advanced Simulation in Science and Engineering
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://doi.org/10.15748/jasse.8.53" target="_blank" rel="noopener noreferrer" alt=""
+            title="read paper">
+            Verified Numerical Computations for Searching for Vectors with the Maximum Sum
+        </a>
+    </div>
+    <div class="author"><u>Y. Uchino</u>, K. Ozaki</div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @article{uchino2021verified,
+                title={Verified Numerical Computations for Searching for Vectors with the Maximum Sum},
+                author={Yuki Uchino and Katsuhisa Ozaki},
+                journal={Journal of Advanced Simulation in Science and Engineering},
+                volume={8},
+                number={1},
+                pages={53-72},
+                year={2021},
+                doi={10.15748/jasse.8.53}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            This study proposes a numerical method for searching for vectors whose sum of all elements is maximum. The
+            vector search can be applied to many scientific problems. If we use numerical computations without
+            considering rounding errors, in a worst-case scenario, we might find incorrect vectors as a result. We
+            propose herein an adaptive method designed to work accurately, regardless of the rounding error problems,
+            based on an error-free transformation of a floating-point vector.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2020">
+    <div class="date-journal">
+        <span class="date">
+            Dec. 14, 2020
+        </span>
+        <span class="journal">
+            研究報告ハイパフォーマンスコンピューティング（HPC）
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://ipsj.ixsq.nii.ac.jp/records/208879" target="_blank" rel="noopener noreferrer" alt=""
+            title="read paper">
+            実対称行列の固有値分解に対する反復改良法の大規模並列環境における実装と評価
+        </a>
+    </div>
+    <div class="author">
+        <u>内野 佑基</u>, 尾崎 克久, 荻田 武史
+    </div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @techreport{oai:ipsj.ixsq.nii.ac.jp:00208879,
+                author = {内野, 佑基 and 尾崎, 克久 and 荻田, 武史},
+                issue = {15},
+                month = {Dec},
+                title = {実対称行列の固有値分解に対する反復改良法の大規模並列環境における実装と評価},
+                year = {2020}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            実対称行列の固有値分解に対する反復改良法を大規模並列環境において実装した結果を報告する．現在までに，標準固有値問題を解く様々な数値計算法が開発されている．それらにより得られる近似固有対の精度を改善する荻田・相島による反復改良法が知られている．本研究では，ScaLAPACK
+            のサブルーチンによって得られる近似固有対を，行列積のエラーフリー変換を組み込んだ荻田・相島の反復改良法により改善する方法を実装した．数値実験として，大規模並列環境に名古屋大学情報基盤センターが運営するスーパーコンピュータ「不老」，及び東京大学情報基盤センターと筑波大学計算科学研究センターが共同運営するスーパーコンピュータ「Oakforest-PACS」を使用した結果を紹介する．
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2019">
+    <div class="date-journal">
+        <span class="date">
+            Nov. 2019
+        </span>
+        <span class="journal">
+            The 38th JSST Annual International Conference on Simulation Technology Conference Proceedings (Student
+            Session)
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://jsst-conf.jp/2019/" target="_blank" rel="noopener noreferrer" alt="" title="read paper">
+            Verified Numerical Computations for Finding Vectors with the Maximum Sum
+        </a>
+    </div>
+    <div class="author"><u>Y. Uchino</u>, K. Ozaki</div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @inproceedings{uchino2019jsst,
+                title={Verified Numerical Computations for Finding Vectors with the Maximum Sum},
+                author={Yuki Uchino and Katsuhisa Ozaki},
+                volume = {},
+                number = {},
+                pages = {38-41},
+                booktitle={The 38th JSST Annual International Conference on Simulation Technology Conference},
+                month = {Nov},
+                year={2019}
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            This paper considers a sum of all elements in a floating-point vector.
+            If we use numerical computations, problems from a rounding error are crucial.
+            We propose an accurate and adaptive numerical method for finding vectors whose sum of all elements is the
+            maximum.
+            The proposed method can be applied for comparison of dot products, values of polynomials, and matrix
+            determinants.
+        </div>
+    </div>
+</div>

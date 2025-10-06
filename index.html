@@ -90,8 +90,8 @@
 
             <li>
                 <a href="#sec-Works">
-                    <span class="en">Recent Works</span>
-                    <span class="ja">最近の成果</span>
+                    <span class="en">Publications</span>
+                    <span class="ja">論文</span>
                 </a>
             </li>
 
@@ -530,269 +530,12 @@
         <section data-nosnippet>
             <div class="anc" id="sec-Works"></div>
             <div class="sec-title">
-                Recent Works
+                Publications
             </div>
 
-            <div class="work">
+            <div class="work" id="works-container">
 
-                <div class="work2">
-                    <div class="date-journal">
-                        <span class="date">
-                            Aug. 06, 2025
-                        </span>
-                        <span class="journal">
-                            arXiv
-                        </span>
-                    </div>
-                    <div class="worktitle">
-                        <a href="https://doi.org/10.48550/arXiv.2508.03984" target="_blank" rel="noopener noreferrer"
-                            alt="" title="read paper">
-                            High-Performance and Power-Efficient Emulation of Matrix Multiplication using INT8 Matrix
-                            Engines
-                        </a>
-                    </div>
-                    <div class="author"><u>Y. Uchino</u>, K. Ozaki, T. Imamura</div>
-                    <div class="abst">
-                        <button class="copy-btn">Copy BibTeX</button>
-                        <textarea class="hidebox" readonly>
-                            @misc{uchino2025highperformancepowerefficientemulationmatrix,
-                                title={High-Performance and Power-Efficient Emulation of Matrix Multiplication using INT8 Matrix Engines}, 
-                                author={Yuki Uchino and Katsuhisa Ozaki and Toshiyuki Imamura},
-                                year={2025},
-                                eprint={2508.03984},
-                                archivePrefix={arXiv},
-                                primaryClass={cs.DC},
-                                url={https://arxiv.org/abs/2508.03984}, 
-                            }
-                        </textarea>
-                        <input type="checkbox" class="checkbox">
-                        <div class="abst-hide">
-                            Recent architectures integrate high-performance and power-efficient matrix engines. These
-                            engines demonstrate remarkable performance in low-precision matrix multiplication, which is
-                            crucial in deep learning. Several techniques have been proposed to emulate single- and
-                            double-precision general matrix-matrix multiplication (SGEMM and DGEMM, respectively) by
-                            leveraging such low-precision matrix engines. In this study, we present emulation methods
-                            that significantly outperforms conventional approaches. On a GH200 Grace Hopper Superchip,
-                            the proposed DGEMM emulation achieves a 1.4x speedup and a 43% improvement in power
-                            efficiency compared to native DGEMM for sufficiently large problems. The proposed SGEMM
-                            emulation achieves a 3.0x speedup and a 154% improvement in power efficiency compared to
-                            native SGEMM for sufficiently large problems. Furthermore, compared to conventional
-                            emulation methods, the proposed emulation achieves more than 2x higher performance and
-                            superior power efficiency.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="work2">
-                    <div class="date-journal">
-                        <span class="date">
-                            Apr. 10, 2025
-                        </span>
-                        <span class="journal">
-                            arXiv
-                        </span>
-                    </div>
-                    <div class="worktitle">
-                        <a href="https://arxiv.org/abs/2504.08009" target="_blank" rel="noopener noreferrer" alt=""
-                            title="read paper">
-                            Ozaki Scheme II: A GEMM-oriented emulation of floating-point matrix multiplication using
-                            an integer modular technique
-                        </a>
-                    </div>
-                    <div class="author">
-                        K. Ozaki, <u>Y. Uchino</u>, T. Imamura
-                    </div>
-                    <div class="abst">
-                        <button class="copy-btn">Copy BibTeX</button>
-                        <textarea class="hidebox" readonly>
-                            @misc{ozaki2025ozakischemeiigemmoriented,
-                                title={{Ozaki Scheme II}: A {GEMM}-oriented emulation of floating-point matrix multiplication using an integer modular technique}, 
-                                author={Katsuhisa Ozaki and Yuki Uchino and Toshiyuki Imamura},
-                                year={2025},
-                                eprint={2504.08009},
-                                archivePrefix={arXiv},
-                                primaryClass={cs.MS},
-                                doi={10.48550/arXiv.2504.08009},
-                                url={https://arxiv.org/abs/2504.08009}, 
-                            }
-                        </textarea>
-                        <input type="checkbox" class="checkbox">
-                        <div class="abst-hide">
-                            This paper addresses emulation algorithms for matrix multiplication. General
-                            Matrix-Matrix
-                            Multiplication (GEMM), a fundamental operation in the Basic Linear Algebra Subprograms
-                            (BLAS),
-                            is typically optimized for specific hardware architectures. The Ozaki scheme is a
-                            well-established GEMM-based emulation method for matrix multiplication, wherein input
-                            matrices
-                            are decomposed into several low-precision components to ensure that the resulting matrix
-                            product
-                            is computed exactly through numerical operations.
-                            This study proposes a novel GEMM-based emulation method for matrix multiplication that
-                            leverages
-                            the Chinese Remainder Theorem.
-                            The proposed method inherits the computational efficiency of highly optimized GEMM
-                            routines
-                            and
-                            further enables control over the number of matrix multiplications, which can enhance
-                            computational accuracy.
-                            We present numerical experiments featuring INT8 Tensor Core operations on GPUs and FP64
-                            arithmetic on CPUs as case studies. The results demonstrate that FP64 emulation using
-                            the
-                            proposed method achieves performance levels of up to 7.4 to 9.8 TFLOPS on the NVIDIA RTX
-                            4090
-                            and 56.6 to 80.2 TFLOPS on the NVIDIA GH200, exceeding the measured performance of
-                            native
-                            FP64
-                            arithmetic. Furthermore, for FP64 computations on CPUs, the proposed method achieved up
-                            to a
-                            2.3x speedup in emulating quadruple-precision arithmetic compared to the conventional
-                            Ozaki
-                            scheme.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="work2">
-                    <div class="date-journal">
-                        <span class="date">
-                            Mar. 25, 2025
-                        </span>
-                        <span class="journal">
-                            Journal of Advanced Simulation in Science and Engineering
-                        </span>
-                    </div>
-                    <div class="worktitle">
-                        <a href="https://doi.org/10.15748/jasse.12.44" target="_blank" rel="noopener noreferrer" alt=""
-                            title="read paper">
-                            Fast Generation of Real-Symmetric Matrices and their Exact Eigenpairs
-                        </a>
-                    </div>
-                    <div class="author">
-                        <u>Y. Uchino</u>, K. Ozaki, T. Terao, T. Imamura
-                    </div>
-                    <div class="abst">
-                        <button class="copy-btn">Copy BibTeX</button>
-                        <textarea class="hidebox" readonly>
-                            @article{uchino2025fast,
-                                title={Fast Generation of Real-Symmetric Matrices and their Exact Eigenpairs},
-                                author={Yuki Uchino and Katsuhisa Ozaki and Takeshi Terao and Toshiyuki Imamura},
-                                journal={Journal of Advanced Simulation in Science and Engineering},
-                                volume={12},
-                                number={1},
-                                pages={44-60},
-                                year={2025},
-                                doi={10.15748/jasse.12.44}
-                            }
-                        </textarea>
-                        <input type="checkbox" class="checkbox">
-                        <div class="abst-hide">
-                            We propose a method to rapidly generate matrices for real-symmetric eigenproblems. The
-                            proposed
-                            method
-                            produces a reproducible matrix with explicit eigenpairs, where the distribution of the
-                            eigenvalues
-                            can
-                            be controlled by a user. All elements of the generated matrix are rigorous
-                            floating-point
-                            numbers
-                            and
-                            can be represented in simple expressions involving the exact eigenvalues. The exact
-                            eigenpairs
-                            of
-                            the
-                            generated matrix are known in advance; thus, the proposed method contributes to the
-                            validation
-                            of
-                            errors
-                            in approximate eigenpairs. Several constraints on the matrix generated by the proposed
-                            method,
-                            were
-                            produced theoretically.
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="work2">
-                    <div class="date-journal">
-                        <span class="date">
-                            Jan. 09, 2025
-                        </span>
-                        <span class="journal">
-                            The International Journal of High Performance Computing Applications
-                        </span>
-                    </div>
-                    <div class="worktitle">
-                        <a href="https://doi.org/10.1177/10943420241313064" target="_blank" rel="noopener noreferrer"
-                            alt="" title="read paper">
-                            Performance enhancement of the Ozaki Scheme on integer matrix multiplication unit
-                        </a>
-                    </div>
-                    <div class="author"><u>Y. Uchino</u>, K. Ozaki, T. Imamura</div>
-                    <div class="abst">
-                        <button class="copy-btn">Copy BibTeX</button>
-                        <textarea class="hidebox" readonly>
-                            @article{uchino2025performance,
-                                author = {Yuki Uchino and Katsuhisa Ozaki and Toshiyuki Imamura},
-                                title ={Performance enhancement of the {Ozaki} Scheme on integer matrix multiplication unit},
-                                journal = {The International Journal of High Performance Computing Applications},
-                                volume = {39},
-                                number = {3},
-                                pages = {462-476},
-                                year = {2025},
-                                doi = {10.1177/10943420241313064},
-                            }
-                        </textarea>
-                        <input type="checkbox" class="checkbox">
-                        <div class="abst-hide">
-                            This study was aimed at simultaneously achieving sufficient accuracy and high
-                            performance
-                            for
-                            general
-                            matrix multiplications. Recent architectures, such as NVIDIA GPUs, feature
-                            high-performance
-                            units
-                            designed for low-precision matrix multiplications in machine learning models, and
-                            next-generation
-                            architectures are expected to follow the same design principle. The key to achieving
-                            superior
-                            performance is to fully leverage such architectures. The Ozaki scheme, a highly accurate
-                            matrix
-                            multiplication algorithm using error-free transformations, enables higher-precision
-                            matrix
-                            multiplication to be performed through multiple lower-precision matrix multiplications
-                            and
-                            higher-precision matrix additions. Ootomo et al. implemented the Ozaki scheme on
-                            high-performance matrix
-                            multiplication units with the aim of achieving both sufficient accuracy and high
-                            performance.
-                            This paper
-                            proposes alternative approaches to improving performance by reducing the numbers of
-                            lower-precision
-                            matrix multiplications and higher-precision matrix additions. Numerical experiments
-                            demonstrate
-                            the
-                            accuracy of the results and conduct performance benchmarks of the proposed approaches.
-                            These
-                            approaches
-                            are expected to yield more efficient results in next-generation architectures.
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="achievement_link_box">
-                    <a href="https://researchmap.jp/yukiuchino?lang=ja" target="_blank" rel="noopener noreferrer" alt=""
-                        title="researchmap" class="ja achievement_link">
-                        業績一覧はこちら<img src="fig/window_button.png" alt="">
-                    </a>
-                    <a href="https://researchmap.jp/yukiuchino?lang=en" target="_blank" rel="noopener noreferrer" alt=""
-                        title="researchmap" class="en achievement_link">
-                        A listing of achievements<img src="fig/window_button.png" alt="">
-                    </a>
-                </div>
-            </div>
+            </div> <!-- work  -->
         </section>
 
 
@@ -978,6 +721,7 @@
     <button class="to-pagetop" title="Back to Top"></button>
 </body>
 
+<script src="js/works.js"></script>
 <script src="js/loading.js"></script>
 <script src="js/control-lang.js"></script>
 <script src="js/go-to-top.js"></script>
