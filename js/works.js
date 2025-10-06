@@ -1,5 +1,5 @@
 
-fetch('work_list.html')
+fetch('./work_list.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('works-container').innerHTML = data;
