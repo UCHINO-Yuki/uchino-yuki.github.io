@@ -60,6 +60,8 @@
     cursor: pointer;
     transition: all 0.3s;
     font-weight: bold;
+    color: #333;
+    font-size: var(--font-small);
 }
 
 .work .filter-btn:hover {
@@ -91,7 +93,9 @@
 
 .date-journal .date {
     text-align: left;
-    min-width: 120px;
+    width: fit-content;
+    white-space: nowrap;
+    margin-right: 10px;
 }
 
 .date-journal .journal {
@@ -210,7 +214,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .achievement_link_box .achievement_link {
