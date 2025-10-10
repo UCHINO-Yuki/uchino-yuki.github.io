@@ -44,7 +44,7 @@
 .work .filter-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 6px;
     width: 100%;
     align-content: center;
     text-align: center;
@@ -75,7 +75,7 @@
 }
 
 .work .filter-btn:active {
-    transform: scale(0.8, 0.8);
+    transform: scale(0.9, 0.9);
 }
 
 .work .hidden {

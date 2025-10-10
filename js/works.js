@@ -4,6 +4,7 @@ fetch('./work_list.html')
   .then(data => {
     document.getElementById('works-container').innerHTML = data;
     initFilter();
+    updateButtonCounts();
   });
 
 function initFilter() {
@@ -38,5 +39,27 @@ function applyFilter(year, works) {
     } else {
       work.classList.add('hidden');
     }
+  });
+}
+
+function countPublicationsByYear() {
+  const works = document.querySelectorAll('.work2');
+  const yearCount = {};
+
+  works.forEach(work => {
+    const year = work.getAttribute('data-year');
+    yearCount[year] = (yearCount[year] || 0) + 1;
+  });
+
+  return yearCount;
+}
+
+function updateButtonCounts() {
+  const counts = countPublicationsByYear();
+
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    const year = btn.getAttribute('data-year');
+    const count = counts[year] || 0;
+    btn.textContent = `${year} (${count})`;
   });
 }
