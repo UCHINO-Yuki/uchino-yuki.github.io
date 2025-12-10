@@ -228,3 +228,19 @@
     height: 20px;
     width: auto;
 }
+
+.chartbox {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.chartcontainer {
+    width: 90%;
+    max-width: 150mm;
+    -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}

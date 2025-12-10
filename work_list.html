@@ -8,6 +8,12 @@
     <button class="filter-btn" data-year="2019">2019</button>
 </div>
 
+<div class="chartbox">
+    <div class="chartcontainer" id="chart_container">
+        <canvas id="chart" style="width:100%; height:100%;"></canvas>
+    </div>
+</div>
+
 <div class="work2" data-year="2025">
     <div class="date-journal">
         <span class="date">
@@ -39,20 +45,26 @@
         </textarea>
         <input type="checkbox" class="checkbox">
         <div class="abst-hide">
-            Modern computing architectures feature low-precision matrix multiplication units that achieve substantially
+            Modern computing architectures feature low-precision matrix multiplication units that achieve
+            substantially
             higher throughput than their high-precision counterparts. Motivated by this architectural trend, the
             emulation of high-precision matrix multiplication using low-precision hardware has attracted significant
             interest in the high-performance computing community. Ozaki, Uchino, and Imamura introduced the Ozaki-II
             scheme as a general framework for emulating matrix multiplication. Building on this framework, Uchino,
             Ozaki, and Imamura developed high-performance and power-efficient techniques for emulating single- and
             double-precision real matrix multiplication on INT8 matrix engines. Extending this line of research, the
-            present study proposes high-performance emulation methods for single- and double-precision complex matrix
+            present study proposes high-performance emulation methods for single- and double-precision complex
+            matrix
             multiplication on INT8 matrix engines, based on the Ozaki-II scheme. On an NVIDIA B200 GPU, the proposed
             methods achieve 4.0x--5.6x and 4.4x--6.5x speedups over the native single- and double-precision complex
-            matrix multiplication routines from cuBLAS, respectively, for sufficiently large problem sizes. When lower
-            accuracy than that of the standard routine is acceptable, the proposed methods can operate at even higher
-            speed. Conversely, with only a modest increase in computation time, they can also deliver higher accuracy
-            than the standard routines. These properties suggest that the proposed approach has the potential to serve
+            matrix multiplication routines from cuBLAS, respectively, for sufficiently large problem sizes. When
+            lower
+            accuracy than that of the standard routine is acceptable, the proposed methods can operate at even
+            higher
+            speed. Conversely, with only a modest increase in computation time, they can also deliver higher
+            accuracy
+            than the standard routines. These properties suggest that the proposed approach has the potential to
+            serve
             as a default algorithm across a wide range of applications.
         </div>
     </div>
@@ -98,11 +110,15 @@
             demonstrate remarkable performance in low-precision matrix multiplication, which is crucial in deep
             learning. Several techniques have been proposed to emulate single- and double-precision general
             matrix-matrix multiplication (SGEMM and DGEMM, respectively) by leveraging such low-precision matrix
-            engines. In this study, we present emulation methods that significantly outperforms conventional approaches.
+            engines. In this study, we present emulation methods that significantly outperforms conventional
+            approaches.
             On a GH200 Grace Hopper Superchip, the proposed DGEMM emulation achieves a 1.4x speedup and a 43%
-            improvement in power efficiency compared to native DGEMM for sufficiently large problems. The proposed SGEMM
-            emulation achieves a 3.0x speedup and a 154% improvement in power efficiency compared to native SGEMM for
-            sufficiently large problems. Furthermore, compared to conventional emulation methods, the proposed emulation
+            improvement in power efficiency compared to native DGEMM for sufficiently large problems. The proposed
+            SGEMM
+            emulation achieves a 3.0x speedup and a 154% improvement in power efficiency compared to native SGEMM
+            for
+            sufficiently large problems. Furthermore, compared to conventional emulation methods, the proposed
+            emulation
             achieves more than 2x higher performance and superior power efficiency.
         </div>
     </div>
@@ -144,11 +160,16 @@
             We present optimal parallel QR factorization algorithms with reduced communication overhead. QR
             factorization is widely applied to solve various problems in numerical linear algebra. Our focus is on
             problems involving dense tall-and-skinny matrices in large-scale parallel distributed memory systems.
-            Reducing data communication is essential for achieving high performance in parallel algorithms because the
-            communication cost is much greater than the computation cost. To date, several QR factorization algorithms
-            have been optimized to reduce communication costs. This paper provides alternative parallel QR factorization
-            algorithms based on the LU-CholeskyQR algorithm. Numerical experiment results demonstrated the accuracy and
-            performance of the developed algorithms against benchmarks. The results indicate that the new algorithms are
+            Reducing data communication is essential for achieving high performance in parallel algorithms because
+            the
+            communication cost is much greater than the computation cost. To date, several QR factorization
+            algorithms
+            have been optimized to reduce communication costs. This paper provides alternative parallel QR
+            factorization
+            algorithms based on the LU-CholeskyQR algorithm. Numerical experiment results demonstrated the accuracy
+            and
+            performance of the developed algorithms against benchmarks. The results indicate that the new algorithms
+            are
             numerically stable even for ill-conditioned problems, and some of these algorithms are faster than other
             conventional algorithms.
         </div>
@@ -476,8 +497,10 @@
             ordinary and highly-accurate precisions. Eigenvalue decomposition is ubiquitous in simulations. Various
             eigensolvers for computing approximations have been developed thus far. If eigenvalues are narrowly
             clustered, the computation of eigenvectors may be ill-posed. Thus, the computed eigenpairs may not be
-            sufficiently accurate and lack reliability. In this study, we introduce mixed-precision iterative refinement
-            methods to improve the accuracy of eigenvectors obtained using numerical methods. This approach contributes
+            sufficiently accurate and lack reliability. In this study, we introduce mixed-precision iterative
+            refinement
+            methods to improve the accuracy of eigenvectors obtained using numerical methods. This approach
+            contributes
             to obtaining sufficiently accurate results without arbitrary precision eigensolvers. We construct a
             high-performance and reliable eigensolver by combining the iterative refinement methods and EigenExa, a
             modern high-performance solver for large-scale and highly parallel computations. Numerical experiment
@@ -518,13 +541,16 @@
         </textarea>
         <input type="checkbox" class="checkbox">
         <div class="abst-hide">
-            This study was aimed at simultaneously achieving sufficient accuracy and high performance for general matrix
+            This study was aimed at simultaneously achieving sufficient accuracy and high performance for general
+            matrix
             multiplications. Recent architectures, such as NVIDIA GPUs, feature high-performance units designed for
             low-precision matrix multiplications in machine learning models, and next-generation architectures are
-            expected to follow the same design principle. The key to achieving superior performance is to fully leverage
+            expected to follow the same design principle. The key to achieving superior performance is to fully
+            leverage
             such architectures. The Ozaki scheme, a highly accurate matrix multiplication algorithm using error-free
             transformations, enables higher-precision matrix multiplication to be performed through multiple
-            lower-precision matrix multiplications and higher-precision matrix additions. Ootomo et al. implemented the
+            lower-precision matrix multiplications and higher-precision matrix additions. Ootomo et al. implemented
+            the
             Ozaki scheme on high-performance matrix multiplication units with the aim of achieving both sufficient
             accuracy and high performance. This paper proposes alternative approaches to improving performance by
             reducing the numbers of lower-precision matrix multiplications and higher-precision matrix additions.
@@ -567,16 +593,19 @@
         <input type="checkbox" class="checkbox">
         <div class="abst-hide">
             In this study, we propose a method to rapidly generate a test problem for real-symmetric eigenproblems.
-            The proposed method produces a matrix with explicit eigenpairs, where the eigenvalues have a distribution
+            The proposed method produces a matrix with explicit eigenpairs, where the eigenvalues have a
+            distribution
             similar to the expected eigenvalues provided by a user.
             All elements of the matrix generated using the proposed method can be represented rigorously by
             floating-point numbers.
-            Fixed eigenvectors are employed in the proposed method, thus enabling the explicit depiction of the entire
+            Fixed eigenvectors are employed in the proposed method, thus enabling the explicit depiction of the
+            entire
             elements of the generated matrix by simple expressions involving the exact eigenvalues.
             Additionally, achieving reproducibility of the generated matrix is straightforward.
             Therefore, the proposed method in this study contributes to the validation of errors in approximate
             eigenpairs.
-            Several constraints exist for the problem size and the condition number of the matrix that can be generated
+            Several constraints exist for the problem size and the condition number of the matrix that can be
+            generated
             by the proposed method.
             During the presentation, we will discuss these constraints and applications of the proposed method to
             enhance the flexibility of the generated eigenproblem.
@@ -632,7 +661,8 @@
             行列積については, 3 つの点行列の積に対する区間演算法及び高精度行列乗算スキームを用いた高精度な Level 3 BLAS を紹介する. 前者では精度保証付き数値計算の基礎を担う区間演算を扱う.
             区間演算はある問題に対する真の解の厳密な存在範囲を求める手法であり, 数値計算結果の信頼性を把握することができる. ここで扱う 3 つの点行列に対する区間行列積は, 行列式, 一般化固有値問題, 特異値分解,
             行列平方根, 行列逆平方根, Sylvester 方程式等の様々な精度保証付き数値計算法において必要不可欠である. 当該研究では, 従来の手法よりもタイトな結果を同程度の計算コストで得られる手法を提案した.
-            また応用として, 3 つの点行列の積の 1-ノルム及び最大値ノルムの上限を求める手法を提案した. 数値実験では, 一般化固有値問題に対する精度保証法を用いて従来法と提案手法を比較し, 提案手法の性能を評価した.
+            また応用として, 3 つの点行列の積の 1-ノルム及び最大値ノルムの上限を求める手法を提案した. 数値実験では, 一般化固有値問題に対する精度保証法を用いて従来法と提案手法を比較し,
+            提案手法の性能を評価した.
         </div>
     </div>
 </div>
@@ -670,15 +700,21 @@
         <input type="checkbox" class="checkbox">
         <div class="abst-hide">
             We propose fast numerical algorithms to improve the accuracy of singular vectors for a real matrix.
-            Recently, Ogita and Aishima proposed an iterative refinement algorithm for singular value decomposition that
+            Recently, Ogita and Aishima proposed an iterative refinement algorithm for singular value decomposition
+            that
             is constructed with highly accurate matrix multiplications carried out six times per iteration. The
-            algorithm runs for the problem that has no multiple and clustered singular values. In this study, we show
-            that the same algorithm can be run with highly accurate matrix multiplications carried out five times. Also,
-            we proposed four algorithms constructed with highly accurate matrix multiplications, two algorithms with the
-            multiplications carried out four times, and the other two with the multiplications carried out five times.
+            algorithm runs for the problem that has no multiple and clustered singular values. In this study, we
+            show
+            that the same algorithm can be run with highly accurate matrix multiplications carried out five times.
+            Also,
+            we proposed four algorithms constructed with highly accurate matrix multiplications, two algorithms with
+            the
+            multiplications carried out four times, and the other two with the multiplications carried out five
+            times.
             These algorithms adopt the idea of a mixed-precision iterative refinement method for linear systems.
             Numerical experiments demonstrate speed-up and quadratic convergence of the proposed algorithms. As a
-            result, the fastest algorithm is 1.7 and 1.4 times faster than the Ogita-Aishima algorithm per iteration on
+            result, the fastest algorithm is 1.7 and 1.4 times faster than the Ogita-Aishima algorithm per iteration
+            on
             a CPU and GPU, respectively.
         </div>
     </div>
@@ -719,7 +755,8 @@
             matrix $A$.
             For a matrix product, the accurate algorithm by using error-free transformation is proposed.
             That algorithm offers advantages in terms of computing speed, high parallelism, and reproducibility.
-            Hopefully, $A^TA$ should be computed at half the cost of a general matrix product, however, it is impossible
+            Hopefully, $A^TA$ should be computed at half the cost of a general matrix product, however, it is
+            impossible
             with the algorithm.
             Our proposed algorithm is performed at almost half the cost of a general matrix product.
         </div>
@@ -757,10 +794,12 @@
         </textarea>
         <input type="checkbox" class="checkbox">
         <div class="abst-hide">
-            This paper discusses algorithms producing an upper bound of the maximum norm of a matrix product using only
+            This paper discusses algorithms producing an upper bound of the maximum norm of a matrix product using
+            only
             standard floating-point arithmetic.
             This upper bound plays an essential role in verified numerical computations.
-            This paper compares several implementations using a priori error estimates and discusses which methods are
+            This paper compares several implementations using a priori error estimates and discusses which methods
+            are
             fast and efficient for verified numerical computations.
             Besides, this paper proposes a new method that combines block matrix computations and the running error.
         </div>
@@ -800,11 +839,16 @@
         <input type="checkbox" class="checkbox">
         <div class="abst-hide">
             This study considers inclusion methods for the multiplication of three point matrices. These methods are
-            essential for verification methods such as for a matrix determinant, generalized eigenvalue decomposition,
-            singular value decomposition, square roots and inverse square roots of a matrix, and Sylvester equations. We
-            consider three methods that involve five matrix multiplications and compare the tightness of enclosures and
-            numerical experiments. The proposed methods produce tighter results than the previous method with the same
-            computational cost. We also show methods for obtaining the upper bound of the maximum norm of a product of
+            essential for verification methods such as for a matrix determinant, generalized eigenvalue
+            decomposition,
+            singular value decomposition, square roots and inverse square roots of a matrix, and Sylvester
+            equations. We
+            consider three methods that involve five matrix multiplications and compare the tightness of enclosures
+            and
+            numerical experiments. The proposed methods produce tighter results than the previous method with the
+            same
+            computational cost. We also show methods for obtaining the upper bound of the maximum norm of a product
+            of
             three point matrices.
         </div>
     </div>
@@ -884,9 +928,11 @@
         <input type="checkbox" class="checkbox">
         <div class="abst-hide">
             This study considers inclusion methods for the multiplication of three point matrices.
-            These methods are essential for verified numerical computations in methods such as generalized eigenvalue
+            These methods are essential for verified numerical computations in methods such as generalized
+            eigenvalue
             decomposition and singular value decomposition.
-            We consider three methods that use five matrix multiplications and compare the tightness of enclosures using
+            We consider three methods that use five matrix multiplications and compare the tightness of enclosures
+            using
             analysis and numerical experiments.
         </div>
     </div>
@@ -1005,16 +1051,20 @@
             また，エラーフリー行列積を用いた反復改良法の要求精度の調査と実装の工夫によりさらなる高速化を図った．
             数値実験では2反復した際のそれらの有効性を示す．
             最後に，一般化固有値問題への拡張も紹介する．<br>
-            We propose algorithms to accelerate iterative refinement for symmetric eigenvalue decomposition proposed by
+            We propose algorithms to accelerate iterative refinement for symmetric eigenvalue decomposition proposed
+            by
             Ogita and Aishima. Various numerical algorithms have been developed for standard eigenvalue problems.
-            Recently, Ogita and Aishima proposed an efficient refinement algorithm which converges quadratically if a
+            Recently, Ogita and Aishima proposed an efficient refinement algorithm which converges quadratically if
+            a
             modestly accurate initial guess is given. That is constructed via four highly accurate matrix
             multiplications per an iteration. In this study, we design the variant of that refinement algorithm for
             matrices whose all eigenvalues are simple. That is constructed via three highly accurate matrix
             multiplications per an iteration. The proposed method achieves results of almost the same quality as the
-            original algorithm proposed by Ogita and Aishima if eigenvalues are all simple and not clustered. Moreover,
+            original algorithm proposed by Ogita and Aishima if eigenvalues are all simple and not clustered.
+            Moreover,
             we investigate the required arithmetic precision for refinement algorithms using error-free matrix
-            multiplications and further accelerate those by devising implementations. Numerical experiments illustrate
+            multiplications and further accelerate those by devising implementations. Numerical experiments
+            illustrate
             the efficiency of the proposed algorithm for two iterations. We also extend our idea to generalized
             eigenvalue problems.
         </div>
@@ -1054,7 +1104,8 @@
         <div class="abst-hide">
             This study considers a refinement algorithm for the eigenvalue decomposition of a real symmetric matrix.
             Various numerical algorithms have been developed for standard eigenvalue problems.
-            Recently, Ogita and Aishima proposed efficient refinement algorithms for improving approximate eigenpairs
+            Recently, Ogita and Aishima proposed efficient refinement algorithms for improving approximate
+            eigenpairs
             obtained using a numerical algorithm.
             In this study, we aim to reduce computational cost of those refinement algorithms.
             Numerical experiments illustrate the efficiency of the proposed algorithm.
@@ -1094,10 +1145,12 @@
         </textarea>
         <input type="checkbox" class="checkbox">
         <div class="abst-hide">
-            This study proposes a numerical method for searching for vectors whose sum of all elements is maximum. The
+            This study proposes a numerical method for searching for vectors whose sum of all elements is maximum.
+            The
             vector search can be applied to many scientific problems. If we use numerical computations without
             considering rounding errors, in a worst-case scenario, we might find incorrect vectors as a result. We
-            propose herein an adaptive method designed to work accurately, regardless of the rounding error problems,
+            propose herein an adaptive method designed to work accurately, regardless of the rounding error
+            problems,
             based on an error-free transformation of a floating-point vector.
         </div>
     </div>
@@ -1173,7 +1226,8 @@
         <div class="abst-hide">
             This paper considers a sum of all elements in a floating-point vector.
             If we use numerical computations, problems from a rounding error are crucial.
-            We propose an accurate and adaptive numerical method for finding vectors whose sum of all elements is the
+            We propose an accurate and adaptive numerical method for finding vectors whose sum of all elements is
+            the
             maximum.
             The proposed method can be applied for comparison of dot products, values of polynomials, and matrix
             determinants.
