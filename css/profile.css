@@ -15,6 +15,41 @@
     display: none;
 }
 
+.bio {
+    width: 100%;
+    max-width: 300mm;
+    /* text-align: left;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #333;
+    background: #fdf4d5;
+    border-left: solid 10px #665F52; */
+    position: relative;
+    margin: 2em 0;
+    padding: 1em 1em;
+    border: solid 3px #665F52;
+    border-radius: 8px;
+}
+
+.bio .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -14px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: var(--font-middle);
+    background: #f8f6e2;
+    color: #665F52;
+    font-weight: bold;
+}
+
+.bio p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
 @media screen and (min-width: 1024px) {
     .profile {
         width: 100%;
