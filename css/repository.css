@@ -61,7 +61,7 @@
 .repository2 .text {
     font-size: var(--font-small);
     font-weight: 400;
-    height: calc(var(--font-small)*7);
+    height: calc(var(--font-small)*11);
     width: 85%;
     text-align: left;
 }
