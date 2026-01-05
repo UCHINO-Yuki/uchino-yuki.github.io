@@ -5,7 +5,6 @@ fetch('./work_list.html')
     document.getElementById('works-container').innerHTML = data;
     initFilter();
     genchart();
-    // updateButtonCounts();
   });
 
 function initFilter() {
@@ -55,68 +54,33 @@ function countPublicationsByYear() {
   return yearCount;
 }
 
-// function updateButtonCounts() {
-//   const counts = countPublicationsByYear();
-
-//   document.querySelectorAll('.filter-btn').forEach(btn => {
-//     const year = btn.getAttribute('data-year');
-//     const count = counts[year] || 0;
-//     btn.textContent = `${year} (${count})`;
-//   });
-// }
-
 function genchart() {
-  const works = document.querySelectorAll('.work2');
-  const counts = countPublicationsByYear();
-  document.getElementById('chart_container').style.height = `${50 + 25 * Object.keys(counts).length}px`;
+  const yearCount = countPublicationsByYear();
+  const years = Object.keys(yearCount).sort();
+  const publications = years.map(y => yearCount[y]);
 
-  // ソートして配列化
-  const years = Object.keys(counts).sort();
-  const values = years.map(y => counts[y]);
+  const chart = document.getElementById('chart');
+  for (let i = 0; i < years.length; i++) {
+    const contents_div = document.createElement('div');
+    contents_div.className = 'bar-row';
+    contents_div.innerHTML = `
+      <div class="year">${years[i]}</div>
+      <div class="bar-area">
+          <div class="bar" style="
+            width: calc(${publications[i]} / 10 * 100%);
+            background: linear-gradient(to right, rgb(255, 200, 0), rgb(255, ${200-publications[i]*20}, 0));
+          "></div>
+          <div class="value" style="left: calc(${publications[i]} / 10 * 100% + 5px);">${publications[i]}</div>
+      </div>
+    `;
+    chart.appendChild(contents_div);
+  }
 
-  // Chart.jsで描画
-  const ctx = document.getElementById('chart').getContext('2d');
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: years,
-      datasets: [{
-        label: '#Publications',
-        data: values,
-        borderWidth: 1,
-      }]
-    },
-    options: {
-      indexAxis: 'y',
-      plugins: {
-        legend: {
-          display: false
-        },
-        title: {
-          display: true,
-          fontSize: 18,
-          fontFamily: "sans-serif",
-          text: 'Number of Publications per Year'
-        },
-        layout: {
-          padding: {
-            left: 0,
-            right: 0,
-            top: 0,
-            bottom: 0
-          }
-        }
-      },
-      scales: {
-        y: {
-          beginAtZero: true,
-          title: { display: true, text: 'Year' }
-        },
-        x: {
-          max: 10,
-          title: { display: true, text: 'No. of Publications' }
-        }
-      },
-    }
+  const elem = document.getElementById("chart");
+  const heightOffset = elem.offsetHeight;
+  const axisLines = document.querySelectorAll("div.axis-line");
+
+  axisLines.forEach(line => {
+    line.style.height = `calc(${heightOffset}px + var(--font-small))`;
   });
 }

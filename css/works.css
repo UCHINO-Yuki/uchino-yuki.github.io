@@ -236,11 +236,76 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .chartcontainer {
     width: 90%;
-    max-width: 150mm;
-    -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    height: auto;
+    max-width: 180mm;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: var(--font-small);
+}
+
+.chart {
+    width: 100%;
+    font-size: var(--font-tiny);
+    margin-top: 15px;
+}
+
+.bar-row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: var(--font-small);
+    margin-bottom: 5px;
+}
+
+.year {
+    width: 6ch;
+    text-align: center;
+}
+
+.bar-area {
+    width: calc(100% - 7ch);
+    position: relative;
+    height: var(--font-small);
+    margin-right: 1ch;
+}
+
+.bar {
+    height: var(--font-small);
+}
+
+.value {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+}
+
+.axis {
+    font-size: var(--font-tiny);
+    width: calc(100% - 7ch);
+    position: relative;
+    height: var(--font-small);
+    margin-right: 1ch;
+    margin-left: 6ch;
+    margin-top: 10px;
+}
+
+.axis-line {
+    position: absolute;
+    bottom: 15px;
+    width: 0.4px;
+    transform: translateX(-0.2px);
+    background: #f8f6e2;
+    font-size: var(--font-small);
+}
+
+.axis-label {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
 }
