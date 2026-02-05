@@ -1,5 +1,6 @@
 <div class="filter-buttons">
-    <button class="filter-btn active" data-year="2025">2025</button>
+    <button class="filter-btn active" data-year="2026">2026</button>
+    <button class="filter-btn" data-year="2025">2025</button>
     <button class="filter-btn" data-year="2024">2024</button>
     <button class="filter-btn" data-year="2023">2023</button>
     <button class="filter-btn" data-year="2022">2022</button>
@@ -37,6 +38,54 @@
             <div class="axis-label" style="left: 90%;">9</div>
             <div class="axis-line" style="left: 100%;"></div>
             <div class="axis-label" style="left: 100%;">10</div>
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2026">
+    <div class="date-journal">
+        <span class="date">
+            Jan. 30, 2026
+        </span>
+        <span class="journal">
+            arXiv
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://arxiv.org/abs/2602.02549" target="_blank" rel="noopener noreferrer" alt="" title="read paper">
+            Error Analysis of Matrix Multiplication Emulation Using Ozaki-II Scheme
+        </a>
+    </div>
+    <div class="author">
+        <u>Y. Uchino</u>, K. Ozaki, T. Imamura
+    </div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @misc{uchino2026erroranalysismatrixmultiplication,
+                title={Error Analysis of Matrix Multiplication Emulation Using Ozaki-II Scheme}, 
+                author={Yuki Uchino and Katsuhisa Ozaki and Toshiyuki Imamura},
+                year={2026},
+                eprint={2602.02549},
+                archivePrefix={arXiv},
+                primaryClass={math.NA},
+                url={https://arxiv.org/abs/2602.02549}, 
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            The Ozaki-II scheme is an emulation method that leverages the Chinese Remainder Theorem to compute
+            high-precision matrix multiplication via a sequence of low-precision matrix multiplications. In this scheme,
+            the attainable numerical accuracy improves as the number of low-precision matrix multiplications increases.
+            Previous numerical studies have shown that single- and double-precision matrix multiplication using the
+            Ozaki-II scheme achieves higher throughput than that of standard BLAS routines on modern AI hardware
+            equipped with fast INT8 matrix multiply-accumulate units with INT8 inputs and INT32 accumulation. However,
+            the accuracy of the Ozaki-II scheme can degrade when the exponent distribution of the input matrices is
+            wide, in which case a large number of low-precision matrix multiplications is required to obtain
+            high-precision results. In this paper, we present a rigorous deterministic error analysis of the Ozaki-II
+            scheme. The proposed analysis not only clarifies the accuracy behavior of the method but also enables the
+            estimation of the number of low-precision matrix multiplications required to achieve a desired level of
+            numerical accuracy.
         </div>
     </div>
 </div>
