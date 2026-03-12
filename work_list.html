@@ -45,6 +45,60 @@
 <div class="work2" data-year="2026">
     <div class="date-journal">
         <span class="date">
+            Mar. 11, 2026
+        </span>
+        <span class="journal">
+            arXiv
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://arxiv.org/abs/2603.10634" target="_blank" rel="noopener noreferrer" alt="" title="read paper">
+            Double-Precision Matrix Multiplication Emulation via Ozaki-II Scheme with FP8 Quantization
+        </a>
+    </div>
+    <div class="author">
+        <u>Y. Uchino</u>, K. Ozaki, T. Imamura
+    </div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @misc{uchino2026doubleprecisionmatrixmultiplicationemulation,
+                title={Double-Precision Matrix Multiplication Emulation via Ozaki-II Scheme with FP8 Quantization}, 
+                author={Yuki Uchino and Katsuhisa Ozaki and Toshiyuki Imamura},
+                year={2026},
+                eprint={2603.10634},
+                archivePrefix={arXiv},
+                primaryClass={cs.DC},
+                url={https://arxiv.org/abs/2603.10634}, 
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            In high-performance computing (HPC) applications, FP64 arithmetic remains indispensable for ensuring
+            numerical accuracy and stability. However, in recent hardware generations, improvements in FP64 arithmetic
+            performance have been relatively modest. Consequently, achieving sustained performance gains for FP64
+            computations necessitates the effective utilization of high-throughput low-precision arithmetic, such as
+            INT8 and FP8. In several recent architectures, such as NVIDIA Blackwell Ultra and NVIDIA Rubin, INT8
+            performance has been significantly reduced, making reliance on INT8 alone insufficient. The use of FP8
+            arithmetic is thus increasingly important. In this paper, we propose a method for emulating double-precision
+            (FP64) general matrix--matrix multiplication (DGEMM), a fundamental and performance-critical kernel in many
+            HPC applications, using FP8 matrix multiply-accumulate (MMA) units. The Ozaki-I and Ozaki-II schemes are
+            well established as foundational approaches for emulating DGEMM via low-precision arithmetic. For DGEMM
+            emulation via the Ozaki-I scheme, implementations using INT8, FP8, and FP16 MMA units have been proposed,
+            all of which can be realized based on the same underlying algorithmic structure. In contrast, although
+            implementations of DGEMM emulation via the Ozaki-II scheme using INT8 MMA units have been reported, the
+            original algorithm cannot be directly adapted to exploit FP8 MMA units. In this work, we introduce a novel
+            technique to overcome this limitation and demonstrate FP64 matrix multiplication emulation based on the
+            Ozaki-II scheme that operates on FP8 MMA units. Compared to FP8-based emulation via the Ozaki-I scheme, our
+            method significantly reduces the number of required FP8 matrix multiplications and enables efficient FP64
+            emulation on emerging GPU architectures.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2026">
+    <div class="date-journal">
+        <span class="date">
             Jan. 30, 2026
         </span>
         <span class="journal">
