@@ -11,6 +11,10 @@
     line-height: 1.4;
 }
 
+.profile a {
+    color: #333;
+}
+
 #sec-title-Profile {
     display: none;
 }
