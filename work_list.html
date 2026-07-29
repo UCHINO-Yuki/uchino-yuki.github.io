@@ -45,6 +45,60 @@
 <div class="work2" data-year="2026">
     <div class="date-journal">
         <span class="date">
+            July 28, 2026
+        </span>
+        <span class="journal">
+            Int. J. High. Perform. C.
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://doi.org/10.1177/10943420261467787" target="_blank" rel="noopener noreferrer" alt=""
+            title="read paper">
+            Ozaki scheme II: A GEMM-oriented emulation of floating-point matrix multiplication using an integer modular
+            technique
+        </a>
+    </div>
+    <div class="author">
+        K. Ozaki, <u>Y. Uchino</u>, T. Imamura
+    </div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @article{doi:10.1177/10943420261467787,
+                author = {Katsuhisa Ozaki and Yuki Uchino and Toshiyuki Imamura},
+                title ={Ozaki scheme II: A GEMM-oriented emulation of floating-point matrix multiplication using an integer modular technique},
+                journal = {The International Journal of High Performance Computing Applications},
+                volume = {0},
+                number = {0},
+                pages = {10943420261467787},
+                year = {2026},
+                doi = {10.1177/10943420261467787},
+                URL = {https://doi.org/10.1177/10943420261467787},
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            This paper addresses emulation algorithms for matrix multiplication. General Matrix-Matrix Multiplication
+            (GEMM), a fundamental operation in the Basic Linear Algebra Subprograms (BLAS), is typically optimized for
+            specific hardware architectures. The Ozaki scheme is a well-established GEMM-based emulation method for
+            matrix multiplication, wherein input matrices are decomposed into several low-precision components to ensure
+            that the resulting matrix product is computed exactly through numerical operations. This study proposes a
+            novel GEMM-based emulation method for matrix multiplication that leverages the Chinese Remainder Theorem.
+            The proposed method inherits the computational efficiency of highly optimized GEMM routines and further
+            enables control over the number of matrix multiplications, which can enhance computational accuracy. We
+            present numerical experiments featuring INT8 Tensor Core operations on GPUs and FP64 arithmetic on CPUs as
+            case studies. The results demonstrate that FP64 emulation using the proposed method achieves performance
+            levels of up to 7.4 to 9.8 TFLOPS on the NVIDIA RTX 4090 and 56.6 to 80.2 TFLOPS on the NVIDIA GH200,
+            exceeding the measured performance of native FP64 arithmetic. Furthermore, for FP64 computations on CPUs,
+            the proposed method achieved up to a 2.3x speedup in emulating quadruple-precision arithmetic compared to
+            the conventional Ozaki scheme.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2026">
+    <div class="date-journal">
+        <span class="date">
             June 22, 2026
         </span>
         <span class="journal">
