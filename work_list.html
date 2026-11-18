@@ -45,6 +45,60 @@
 <div class="work2" data-year="2026">
     <div class="date-journal">
         <span class="date">
+            Nov. 18, 2026
+        </span>
+        <span class="journal">
+            SC26
+        </span>
+    </div>
+    <div class="worktitle">
+        <a href="https://doi.ieeecomputersociety.org/10.1109/SC51908.2026.00093" target="_blank"
+            rel="noopener noreferrer" alt="" title="read paper">
+            Double-Precision Matrix Multiplication Emulation via Ozaki-II Scheme with FP8 Quantization
+        </a>
+    </div>
+    <div class="author">
+        K. Ozaki, <u>Y. Uchino</u>, T. Imamura
+    </div>
+    <div class="abst">
+        <button class="copy-btn">Copy BibTeX</button>
+        <textarea class="hidebox" readonly>
+            @INPROCEEDINGS{,
+                author = { Uchino, Yuki and Ozaki, Katsuhisa and Imamura, Toshiyuki },
+                booktitle = { SC26: International Conference for High Performance Computing, Networking, Storage and Analysis },
+                title = {{ Double-Precision Matrix Multiplication Emulation via Ozaki-II Scheme with FP8 Quantization }},
+                year = {2026},
+                volume = {},
+                ISSN = {},
+                pages = {1477-1503},
+                keywords = {emulation;matrix multiplication;ozaki scheme;fp8;tensor cores;dgemm},
+                doi = {10.1109/SC51908.2026.00093},
+                url = {https://doi.ieeecomputersociety.org/10.1109/SC51908.2026.00093},
+                publisher = {IEEE Computer Society},
+                address = {Los Alamitos, CA, USA},
+                month =Nov,
+            }
+        </textarea>
+        <input type="checkbox" class="checkbox">
+        <div class="abst-hide">
+            In this paper, we propose a method for emulating double-precision general matrix-matrix multiplication
+            (DGEMM), a fundamental and performance-critical kernel in many high-performance computing applications.
+            Ozaki-I and Ozaki-II are established DGEMM emulation schemes via lowprecision matrix multiply-accumulate
+            (MMA) units. For the Ozaki-I scheme, INT8-, FP8-, and FP16-based implementations have been proposed, all of
+            which can be realized based on the same underlying algorithmic structure. In contrast, although INT8-based
+            implementations of the Ozaki-II scheme have been reported, the original algorithm cannot be directly adapted
+            to exploit FP8 MMA units. In several recent architectures, such as NVIDIA Blackwell Ultra and NVIDIA Rubin,
+            INT8 performance has been reduced, making reliance on INT8 alone insufficient. Therefore, we introduce a
+            novel technique to demonstrate DGEMM emulation based on the Ozaki-II scheme that operates on FP8 MMA units.
+            Compared to the FP8-based Ozaki-I scheme, our method significantly reduces the computational cost and
+            enables efficient FP64 emulation.
+        </div>
+    </div>
+</div>
+
+<div class="work2" data-year="2026">
+    <div class="date-journal">
+        <span class="date">
             July 28, 2026
         </span>
         <span class="journal">
